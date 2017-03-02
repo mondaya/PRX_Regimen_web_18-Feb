@@ -1,0 +1,208 @@
+Options -Indexes
+Options +FollowSymLinks -MultiViews
+RewriteEngine On
+#RewriteBase /
+AddDefaultCharset UTF-8
+
+ErrorDocument 404 /modules-nct/home-nct/
+
+#RewriteRule \.(nct)$ - [F]
+RewriteRule ^/?$ modules-nct/home-nct/ [L]
+RewriteRule ^/home/?$  modules-nct/home-nct/index.php
+
+### newletter ###
+RewriteRule ^newsletter/verify/(.*)?$  modules-nct/home-nct/newsletter-nct.php?id=$1  [QSA,L]
+RewriteRule ^newsletter/verify/(.*)/?$  modules-nct/home-nct/newsletter-nct.php?id=$1  [QSA,L]
+
+### login ###
+RewriteRule ^login/?$ modules-nct/login-nct/ [L]
+RewriteRule ^ajax.forgot.php?$ modules-nct/forgot_password-nct/ajax.forgot_password-nct.php [L]
+
+### logout ###
+RewriteRule ^logout/?$ modules-nct/logout-nct/?action=logout [L]
+
+### registration ###
+RewriteRule ^registration/?$ modules-nct/registration-nct/ [L]
+RewriteRule ^ajax.forgot.php?$ modules-nct/forgot_password-nct/ajax.forgot_password-nct.php [L]
+RewriteRule ^ajax-registration-nct/?$ modules-nct/registration-nct/ajax.registration-nct.php [L]
+
+### Active register user ###
+RewriteRule ^activation/(.*)/(.*)/$ modules-nct/registration-nct/?id=$1&activationCode=$2&action=activation [L]
+
+###social Login###
+RewriteRule ^social/(facebook|google|linkedin|twitter)/?$ modules-nct/registration-nct/index.php?provider=$1&action=sociallogin [L,QSA]
+
+### user profile ###
+RewriteRule ^profile/(.*)/?$ modules-nct/userprofile-nct/?id=$1&action=profile [L]
+RewriteRule ^editprofile/(.*)/?$ modules-nct/userprofile-nct/?id=$1&action=editprofile [L]
+RewriteRule ^myboughtproduct/(.*)/?$ modules-nct/userprofile-nct/?id=$1&action=myboughtproduct [L]
+
+### change password ###
+RewriteRule ^settings/?$ modules-nct/settings-nct/?action=settings [L]
+RewriteRule ^settings/(.*)/$ modules-nct/settings-nct/?id=$1&action=settings [L]
+
+### nofication ###
+RewriteRule ^notification/?$ modules-nct/notification-nct/?action=notification [L]
+
+###currency conversion###
+RewriteRule ^currency/(.*)$ modules-nct/home-nct/ajax.home-nct.php?id=$1&action=change_currency [QSA,L]
+RewriteRule ^currency/(.*)/$ modules-nct/home-nct/ajax.home-nct.php?id=$1&action=change_currency [QSA,L]
+
+
+### Categories ###
+RewriteRule ^categories/?$ modules-nct/categories-nct/ [L]
+
+###Sub Categories ###
+RewriteRule ^subcategories/([0-9]+)/?$ modules-nct/subcategories-nct/index.php?cateId=$1 [L]
+
+## For content static pages ##
+RewriteRule ^content/([0-9]+)/?$  modules-nct/static-nct/?id=$1
+
+## Search Deals ##
+RewriteRule ^searchDeals/?$  modules-nct/deals-nct/
+RewriteRule ^searchDeals/(.*)/(.*)/?$  modules-nct/deals-nct/index.php?cateId=$1&subCateId=$2
+
+###Deal Detail###
+RewriteRule ^product/([0-9]+)/?$ modules-nct/dealDetail-nct/index.php?dealId=$1 [L]
+RewriteRule ^add-to-cart/(.*)/?$ modules-nct/dealDetail-nct/index.php?dealId=$1&action=add-to-cart [L]
+
+
+## Place Custom Order ##
+RewriteRule ^placeOrder/?$  modules-nct/customOrder-nct/
+
+## My Custom Order ##
+RewriteRule ^myCustomOrder/?$  modules-nct/myCustomOrder-nct/
+RewriteRule ^delete/(.*)/?$ modules-nct/myCustomOrder-nct/index.php?id=$1&action=delete [L]
+
+###Custom Order Detail###
+RewriteRule ^customOrder/([0-9]+)/?$ modules-nct/customOrderDetail-nct/index.php?id=$1 [L]
+
+###Custom Order Cart###
+RewriteRule ^customCart/([0-9]+)/?$ modules-nct/customOrderCart-nct/index.php?id=$1 [L]
+
+## My Order ##
+RewriteRule ^myOrder/?$  modules-nct/myOrder-nct/
+RewriteRule ^deleteOrder/(.*)/?$ modules-nct/myOrder-nct/index.php?id=$1&action=delete [L]
+
+###Order Detail###
+RewriteRule ^order/(.*)/?$ modules-nct/orderDetail-nct/index.php?id=$1 [L]
+
+###Transaction Detail###
+RewriteRule ^transaction/(.*)/?$ modules-nct/transactionDetail-nct/index.php?id=$1 [L]
+
+###Order Cart###
+RewriteRule ^orderCart/?$ modules-nct/orderCart-nct/index.php [L]
+RewriteRule ^deleteCart/(.*)/(.*)/?$ modules-nct/orderCart-nct/index.php?cartId=$1&pId=$2&action=delete [L]
+RewriteRule ^orderCart/(.*)/(.*)/(.*)/?$ modules-nct/orderCart-nct/index.php?action=$1&quantity=$2&cartId=$3 [L]
+
+
+## My Favorite Categories ##
+RewriteRule ^myCate/?$  modules-nct/favoriteCate-nct/
+RewriteRule ^deleteCate/(.*)/?$ modules-nct/favoriteCate-nct/index.php?id=$1&action=delete [L]
+
+## My Favorite Store ##
+RewriteRule ^myStore/?$  modules-nct/favoriteStore-nct/
+RewriteRule ^deleteStore/(.*)/?$ modules-nct/favoriteStore-nct/index.php?id=$1&action=delete [L]
+
+## My Notifications ##
+RewriteRule ^notifications/?$  modules-nct/notifications-nct/
+
+## Wallet ##
+RewriteRule ^wallet/?$  modules-nct/wallet-nct/
+
+## Deposite Fund ##
+RewriteRule ^deposit/?$  modules-nct/depositeFund-nct/
+
+## Redeem Request ##
+RewriteRule ^redeem/?$  modules-nct/redeem-nct/
+
+## Referral ##
+RewriteRule ^referral/?$  modules-nct/referral-nct/
+RewriteRule ^referral/(.*)/?$ modules-nct/registration-nct/index.php?referralId=$1&action=referral [L]
+
+## Payment History ##
+RewriteRule ^paymentHistory/?$  modules-nct/paymentHistory-nct/
+
+## My Account ##
+RewriteRule ^account/?$  modules-nct/dashboard-nct/
+
+## Contact Us ##
+RewriteRule ^contactUs/?$  modules-nct/contactUs-nct/
+
+## Stores ##
+RewriteRule ^stores/?$  modules-nct/stores-nct/
+RewriteRule ^stores/([0-9]+)/([0-9]+)/?$  modules-nct/stores-nct/index.php?cateId=$1&subCateId=$2
+RewriteRule ^stores/([0-9]+)/?$  modules-nct/stores-nct/index.php?cateId=$1
+
+####image thumb###
+RewriteRule ^image-thumb/([0-9]+)/([0-9]+)/([0-9]+)/([0-9]+)/?$ includes-nct/image-thumb-nct.php?w=$1&h=$2&zc=$3&q=$4 [QSA,L]
+
+<FilesMatch "\.(html?|txt|css|js|php|ico|jpe?g|png|gif|JPE?G|PNG|GIF|swf|woff|ttf|svt|eot)$">
+    SetOutputFilter DEFLATE
+</FilesMatch>
+<ifModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault A300
+  # Expires after 1 month
+  ExpiresByType image/gif A2592000
+  ExpiresByType image/png A2592000
+  ExpiresByType image/jpg A2592000
+  ExpiresByType image/jpeg A2592000
+  ExpiresByType image/x-icon A2592000
+  ExpiresByType application/pdf A2592000
+  ExpiresByType application/javascript A2592000
+  ExpiresByType application/x-javascript A2592000
+  ExpiresByType text/plain A2592000
+  ExpiresByType text/css A2592000
+  ExpiresByType font/ttf A2592000
+  ExpiresByType font/woff A2592000
+  ExpiresByType application/x-font-ttf A2592000
+  ExpiresByType application/x-font-woff A2592000
+</ifModule>
+<IfModule mod_headers.c>
+  <filesMatch "\.(css|ico|jpg|jpeg|png|gif|swf|woff|ttf|svt|eot)$">
+    Header set Cache-Control "public, no-transform"
+  </filesMatch>
+  <filesMatch "\.(js)$">
+    Header set Cache-Control "private"
+  </filesMatch>
+  <filesMatch "\.(x?html?|php|html?)$">
+    Header set Cache-Control "max-age=7200, private, must-revalidate"
+  </filesMatch>
+</IfModule>
+
+<ifModule mod_gzip.c>
+  mod_gzip_on Yes
+  mod_gzip_dechunk Yes
+  mod_gzip_item_include file \.(html?|txt|css|js|php|pl|jpg|gif|png|JPG|JPEG|GIF|PNG|jpeg|woff|ttf|svt)$
+  mod_gzip_item_include handler ^cgi-script$
+  mod_gzip_item_include mime ^text/.*
+  mod_gzip_item_include mime ^application/x-javascript.*
+  mod_gzip_item_include mime ^image/.*
+  mod_gzip_item_include application/x-font-ttf
+  mod_gzip_item_include application/x-font-woff
+  mod_gzip_item_include rspheader ^Content-Encoding:.*gzip.*
+</ifModule>
+
+# BEGIN EXPIRES
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresDefault "access plus 10 days"
+ExpiresByType text/css "access plus 1 week"
+ExpiresByType text/plain "access plus 1 month"
+ExpiresByType image/gif "access plus 1 month"
+ExpiresByType image/png "access plus 1 month"
+ExpiresByType image/jpeg "access plus 1 month"
+ExpiresByType application/x-javascript "access plus 1 month"
+ExpiresByType application/javascript "access plus 1 week"
+ExpiresByType application/x-icon "access plus 1 year"
+</IfModule>
+# END EXPIRES
+
+# 1 Month for most static assets
+<filesMatch ".(css|jpg|jpeg|png|gif|js|ico)$">
+Header set Cache-Control "max-age=2592000, public"
+</filesMatch>
+
+FileETag None
+Header set X-UA-Compatible "IE=edge"

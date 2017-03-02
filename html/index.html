@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>H-Link Africa</title>
+
+    <link type="text/css" rel="stylesheet" href="nct-css/font-awesome.css">
+    <link type="text/css" rel="stylesheet" href="nct-css/nct-bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="nct-css/select/bootstrap-select.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,800,700italic,800italic" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" href="nct-css/nct-style.css">
+    <style>
+        /*Accordian*/
+ .accordion {
+    width: 100%;
+}
+.accordion .accordion-head {
+	width: 100%;
+    opacity: 1;
+    text-shadow: none;
+}
+.accordion .accordion-head * {
+    cursor: pointer;
+}
+.accordion h1 {
+	/* float: left; */
+	text-align: center;
+	font-size: 36px;
+	color: #000;
+}
+.accordion .accordion-body {
+    padding: 20px;
+    height: auto;
+    display: none;
+}
+.accordion .arrow {
+	float: right;
+	width: 0px;
+	height: 0px;
+	border: 50px solid transparent;
+	margin: -75px -55px;
+	background: url(../html/nct-image/arrow_down.png) 98% no-repeat;
+	display: block;
+}
+.accordion-head.open .arrow {
+    border-top-color: transparent;
+    background: url(../html/nct-image/arrow_up.png) 98% no-repeat;
+}
+        
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <nav class="panel">
+            <ul>
+                <li>
+                    <div class="openSubPanel"><i class="fa fa-home"></i>Home
+                    </div>
+                </li>
+                <li>
+                    <div class="openSubPanel"><i class="fa fa-play-circle-o"></i> Video Intro</div>
+                </li>
+                <li>
+                    <div class="openSubPanel"><i class="fa fa-download"></i> Download Apps</div>
+                </li>
+                <li>
+                    <div class="openSubPanel"><i class="fa fa-phone"></i> Contact Us
+                    </div>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <div class="openSubPanel"><i class="fa fa-gavel"></i> Product Deals</div>
+                </li>
+                <li>
+                    <div class="openSubPanel"><i class="fa fa-shopping-bag"></i> Product Brands</div>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <div class="openSubPanel"><i class="fa fa-user"></i> My Account
+                    </div>
+                </li>
+                <li>
+                    <div class="openSubPanel"><i class="fa fa-bell"></i> Notification
+                    </div>
+                </li>
+                <li>
+                    <div class="openSubPanel"><i class="fa fa-sign-out"></i> Logout
+                    </div>
+                </li>
+                <li class="closePanel"><i class="fa fa-times"></i> Close
+                </li>
+            </ul>
+
+        </nav>
+
+        <div class="wrapper">
+            <div class="container">
+                <div class="main-content ">
+
+                    <div class="main-head">
+                        <div class="logo">
+                            <a href="#"><img src="nct-image/HLINKS-LOGO.png" alt="HLINK-LOGO" width="100" height="50"></a>
+                        </div>
+
+                        <div class="menu">
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="nct-image/paypal.png" alt="payment-gateway" width="70" height="35"></a>
+                                    <a href="#"><img src="nct-image/MASTERCARD-LOGO.png" alt="payment-gateway" width="70" height="35"></a>
+                                    <a href="#"><img src="nct-image/VISA-LOGO.png" alt="payment-gateway" width="70" height="35"></a>
+                                </li>
+                                <li>
+                                    <div class="dropdown">
+                                        <button class="btn btn-default dropdown-toggle select-currency" type="button" id="dropdownMenu5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                            Select Currency
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu currency" aria-labelledby="dropdownMenu1">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" href="#" data-toggle="dropdown"><h5>LOGIN</h5></a>
+
+                                    <div class="dropdown-menu login-dropdown">
+                                        <span class="menu-arrow"></span>
+                                        <form method="post" action="login">
+                                            <div class="form-group">
+                                                <input type="email" name="username" id="username" tabindex="1" class="form-control" placeholder="Email Id" value="">
+                                                <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
+                                                <input type="checkbox" tabindex="3" class="" name="remember" id="remember">
+                                                <label for="remember"> Remember Me</label>
+                                                <a href="#" tabindex="5" class="forgot-password">Forgot Password?</a>
+                                                <div class="form-group text-center">
+                                                    <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Log In">
+                                                </div>
+                                            </div>
+                                            <div class="form-group text-center">
+                                                <p class="or-line"><span class="or">OR</span></p>
+                                            </div>
+                                            <div class="social-login-btn">
+                                                <a href="#">
+                                                    <img src="nct-image/fb.jpg">
+                                                </a>
+                                                <a href="#">
+                                                    <img src="nct-image/google+.png">
+                                                </a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </li>
+                                <li><a href="#"><h5>SignUp</h5></a></li>
+                                <li>
+                                    <div class="menuTrigger">
+                                        <a href="#">
+                                            <h5>menu<i class="fa fa-bars"></i></h5></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#bs-carousel" data-slide-to="1"></li>
+                        <li data-target="#bs-carousel" data-slide-to="2"></li>
+                        <li data-target="#bs-carousel" data-slide-to="3"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item slides active">
+                            <div class="slide-1">
+                                <img src="nct-image/homepage-web-slider-ENG1.jpg">
+                            </div>
+                            <div class="hero">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                            </div>
+                        </div>
+                        <div class="item slides">
+                            <div class="slide-2">
+                                <img src="nct-image/home-slider-2.jpg">
+                            </div>
+                            <div class="hero">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                            </div>
+                        </div>
+                        <div class="item slides">
+                            <div class="slide-3">
+                                <img src="nct-image/slide21.jpg">
+                            </div>
+                            <div class="hero">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                            </div>
+                        </div>
+                        <div class="item slides">
+                            <div class="slide-4">
+                                <img src="nct-image/slide21.jpg">
+                            </div>
+                            <div class="hero">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="supported-brands-slider">
+                    <div class="form-group">
+                        <div class="icon-addon addon-md">
+                            <input type="text" class="form-control" id="email" placeholder="Search by keyword">
+
+                            <label for="search" class="fa fa-search" aria-hidden="true" rel="tooltip" title="search"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="supported-brands-slider">
+                    <a href="#"><h4>Supported Brands</h4></a>
+
+                    <div class="col-lg-10">
+                        <div id="Carousel" class="carousel slide">
+
+                            <!-- Carousel items -->
+                            <div class="carousel-inner brand-inner">
+
+                                <div class="item active">
+                                    <div class="row">
+                                        <div class="brand-logo">
+                                            <a href="#" class="thumbnail"><img src="nct-image/520b07ed5b5ac_thumb.jpg" alt="Image"></a>
+                                        </div>
+                                        <div class="brand-logo">
+                                            <a href="#" class="thumbnail"><img src="nct-image/eco-life-logo-f.jpg" alt="Image"></a>
+                                        </div>
+                                        <div class="brand-logo">
+                                            <a href="#" class="thumbnail"><img src="nct-image/himalaya-logo.jpg" alt="Image"></a>
+                                        </div>
+                                        <div class="brand-logo">
+                                            <a href="#" class="thumbnail"><img src="nct-image/images.jpg" alt="Image"></a>
+                                        </div>
+                                        <div class="brand-logo">
+                                            <a href="#" class="thumbnail"><img src="nct-image/logo.jpg" alt="Image" style="max-width:100%;"></a>
+                                        </div>
+                                        <div class="brand-logo">
+                                            <a href="#" class="thumbnail"><img src="nct-image/logo-design-vega-health-food-store.png" alt="Image" style="max-width:100%;"></a>
+                                        </div>
+                                    </div>
+                                    <!--.row-->
+                                </div>
+                                <!--.item-->
+
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="brand-logo">
+                                            <a href="#" class="thumbnail"><img src="nct-image/520b07ed5b5ac_thumb.jpg" alt="Image"></a>
+                                        </div>
+                                        <div class="brand-logo">
+                                            <a href="#" class="thumbnail"><img src="nct-image/eco-life-logo-f.jpg" alt="Image"></a>
+                                        </div>
+                                        <div class="brand-logo">
+                                            <a href="#" class="thumbnail"><img src="nct-image/himalaya-logo.jpg" alt="Image"></a>
+                                        </div>
+                                        <div class="brand-logo">
+                                            <a href="#" class="thumbnail"><img src="nct-image/images.jpg" alt="Image"></a>
+                                        </div>
+                                        <div class="brand-logo">
+                                            <a href="#" class="thumbnail"><img src="nct-image/logo.jpg" alt="Image" style="max-width:100%;"></a>
+                                        </div>
+                                        <div class="brand-logo">
+                                            <a href="#" class="thumbnail"><img src="nct-image/logo-design-vega-health-food-store.png" alt="Image" style="max-width:100%;"></a>
+                                        </div>
+                                    </div>
+                                    <!--.row-->
+                                </div>
+                                <!--.item-->
+
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="brand-logo">
+                                            <a href="#" class="thumbnail"><img src="nct-image/520b07ed5b5ac_thumb.jpg" alt="Image"></a>
+                                        </div>
+                                        <div class="brand-logo">
+                                            <a href="#" class="thumbnail"><img src="nct-image/eco-life-logo-f.jpg" alt="Image"></a>
+                                        </div>
+                                        <div class="brand-logo">
+                                            <a href="#" class="thumbnail"><img src="nct-image/himalaya-logo.jpg" alt="Image"></a>
+                                        </div>
+                                        <div class="brand-logo">
+                                            <a href="#" class="thumbnail"><img src="nct-image/images.jpg" alt="Image"></a>
+                                        </div>
+                                        <div class="brand-logo">
+                                            <a href="#" class="thumbnail"><img src="nct-image/logo.jpg" alt="Image" style="max-width:100%;"></a>
+                                        </div>
+                                        <div class="brand-logo">
+                                            <a href="#" class="thumbnail"><img src="nct-image/logo-design-vega-health-food-store.png" alt="Image" style="max-width:100%;"></a>
+                                        </div>
+                                    </div>
+                                    <!--.row-->
+                                </div>
+                                <!--.item-->
+
+                            </div>
+                            <!--.carousel-inner-->
+                        </div>
+                        <!--.Carousel-->
+
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="category-tab">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#SpecialtySupplement" aria-controls="home" role="tab" data-toggle="tab">Specialty Supplement</a></li>
+                        <li role="presentation"><a href="#Vitamins" aria-controls="home" role="tab" data-toggle="tab">Vitamins</a></li>
+                        <li role="presentation"><a href="#Supplements" aria-controls="home" role="tab" data-toggle="tab">Supplements</a></li>
+                        <li role="presentation"><a href="#Homeopathic" aria-controls="home" role="tab" data-toggle="tab">Homeopathic</a></li>
+                        <li role="presentation"><a href="#HealthyHome" aria-controls="home" role="tab" data-toggle="tab">Healthy Home</a></li>
+                        <li role="presentation"><a href="Sports&Nutritoin" aria-controls="home" role="tab" data-toggle="tab">Sports &amp; Nutritoin</a></li>
+                        <li role="presentation"><a href="#AllCategories" aria-controls="home" role="tab" data-toggle="tab">All Categories</a></li>
+                        <li role="presentation"><a href="#AllDeals" aria-controls="home" role="tab" data-toggle="tab">All Deals</a></li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="SpecialtySupplement">
+                            <div class="tab-head">
+                                <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h3></div>
+
+                            <div class="category-list">
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                                <div class="category-img">
+
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="Vitamins">
+                            <div class="tab-head">
+                                <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h3></div>
+
+                            <div class="category-list">
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="Supplements">
+                            <div class="tab-head">
+                                <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h3></div>
+
+                            <div class="category-list">
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="Homeopathic">
+                            <div class="tab-head">
+                                <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h3></div>
+
+                            <div class="category-list">
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="HealthyHome">
+                            <div class="tab-head">
+                                <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h3></div>
+
+                            <div class="category-list">
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="Sports&Nutritoin">
+                            <div class="tab-head">
+                                <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h3></div>
+
+                            <div class="category-list">
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="AllCategories">
+                            <div class="tab-head">
+                                <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h3></div>
+
+                            <div class="category-list">
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="AllDeals">
+                            <div class="tab-head">
+                                <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h3></div>
+
+                            <div class="category-list">
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+                                <div class="category-img">
+                                    <img src="nct-image/520b07ed5b5ac_thumb.jpg">
+                                    <h4>Lorem Ipsum </h4>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="arrow">
+                            <a href="#" class="box-height"><i class="fa fa-angle-down arrow-btn" aria-hidden="true"></i>
+</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="cssmenu">
+                    <ul>
+                        <li class="step-1"><a href="#">Step-1
+   <h4>Lorem Ipsum</h4>
+   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+   </a>
+                            <ul>
+                                <li class="step-info"><a href="#">Step-1
+         <h4>Lorem Ipsum</h4>
+   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="step-2"><a href="#">Step-2
+   <h4>Lorem Ipsum</h4>
+   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+   </a>
+                            <ul>
+                                <li class="step-info"><a href="#">
+         Step-2
+         <h4>Lorem Ipsum</h4>
+   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="step-3"><a href="#">Step-3
+   <h4>Lorem Ipsum</h4>
+   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+   </a>
+                            <ul>
+                                <li class="step-info"><a href="#">
+         Step-3
+         <h4>Lorem Ipsum</h4>
+   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="download-app">
+                            <div class="download-from">
+                                <h4>Download app from</h4>
+                                <div class="android">
+                                    <a href="#"><img src="nct-image/Android.png" width="50px" height="50px">Google Play</a>
+                                </div>
+                                <div class="apple">
+                                    <a href="#"><img src="nct-image/Apple-icon.png" width="50px" height="50px">Apple Store</a>
+                                </div>
+                            </div>
+                            <div class="video-url"><a href="#">Introductory Video</a></div>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <!--<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                   
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+                 
+                    <div class="carousel-inner product-inner">
+                        <div class="item active">
+                            <img src="nct-image/5-1-OLYMPIA-GL2641-DK-1024x704.jpg" alt="...">
+                        </div>
+                        <div class="item">
+                            <img src="nct-image/5-1-OLYMPIA-GL2641-DK-1024x704.jpg" alt="...">
+                        </div>
+                    </div>
+                   
+                    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                        <span class="left-arrow"><i class="fa fa-angle-left" aria-hidden="true"></i>
+</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                        <span class="right-arrow"><i class="fa fa-angle-right" aria-hidden="true"></i>
+</span>
+                    </a>
+                </div>
+-->
+
+                <div class="slider-url">
+                    <div id="carousel-example-generic" class="carousel slide">
+
+
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-md-3 img-url">
+                                        <a href="http://www.gap.com/" class="slider-img" target="_blank"><img src="nct-image/1.jpg">
+                                            <div class="carousel-caption">
+                                                <h3>Headline</h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3 img-url">
+                                        <a href="http://www.ebay.in/" class="slider-img" target="_blank"><img src="nct-image/2.jpg">
+                                            <div class="carousel-caption">
+                                                <h3>Headline</h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3 img-url">
+                                        <a href="#" class="slider-img" target="_blank"><img src="nct-image/3.jpg">
+                                            <div class="carousel-caption">
+                                                <h3>Headline</h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3 img-url">
+                                        <a href="http://www.6pm.com/" class="slider-img" target="_blank"><img src="nct-image/4.jpg">
+                                            <div class="carousel-caption">
+                                                <h3>Headline</h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--.row-->
+                            </div>
+                            <!--.item-->
+
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-md-3 img-url">
+                                        <a href="#" class="slider-img" target="_blank"><img src="nct-image/5.jpg">
+                                            <div class="carousel-caption">
+                                                <h3>Headline</h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3 img-url">
+                                        <a href="http://www.ebay.in/" class="slider-img" target="_blank"><img src="nct-image/2.jpg">
+                                            <div class="carousel-caption">
+                                                <h3>Headline</h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3 img-url">
+                                        <a href="http://www.6pm.com/" class="slider-img" target="_blank"><img src="nct-image/4.jpg">
+                                            <div class="carousel-caption">
+                                                <h3>Headline</h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3 img-url">
+                                        <a href="http://www.gap.com/" class="slider-img" target="_blank"><img src="nct-image/1.jpg">
+                                            <div class="carousel-caption">
+                                                <h3>Headline</h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--.row-->
+                            </div>
+                            <!--.item-->
+
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-md-3 img-url">
+                                        <a href="#" class="slider-img" target="_blank"><img src="nct-image/5.jpg">
+                                            <div class="carousel-caption">
+                                                <h3>Headline</h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3 img-url">
+                                        <a href="http://www.ebay.in/" class="slider-img" target="_blank"><img src="nct-image/2.jpg">
+                                            <div class="carousel-caption">
+                                                <h3>Headline</h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3 img-url">
+                                        <a href="http://www.6pm.com/" class="slider-img" target="_blank"><img src="nct-image/4.jpg">
+                                            <div class="carousel-caption">
+                                                <h3>Headline</h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3 img-url">
+                                        <a href="http://www.gap.com/" class="slider-img" target="_blank"><img src="nct-image/1.jpg">
+                                            <div class="carousel-caption">
+                                                <h3>Headline</h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--.row-->
+                            </div>
+                            <!--.item-->
+
+                        </div>
+                        <!--.carousel-inner-->
+                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                            <span class="left-arrow"><i class="fa fa-angle-left" aria-hidden="true"></i>
+</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                            <span class="right-arrow"><i class="fa fa-angle-right" aria-hidden="true"></i>
+</span>
+                        </a>
+                    </div>
+                    <!--.Carousel-->
+
+                </div>
+<div class="accordion">
+    <h1>Why Wellness Merc ?</h1>
+    <div class="accordion-head">
+        
+          <div class="arrow down"></div>
+
+    </div>
+  
+    <div class="accordion-body">
+        <p>Lorem Ipsum is sfnti nting and typesetting industry dummy text o g and typesetting industry.Lorem Ipsum is sfnti nting and typesetting industry dummy text o g and typesetting industry.Lorem Ipsum is sfnti nting and typesetting industry dummy text o g and typesetting industry.Lorem Ipsum is sfnti nting and typesetting industry dummy text o g and typesetting industry.Lorem Ipsum is sfnti nting and typesetting industry dummy text o g and typesetting industry.Lorem Ipsum is sfnti nting and typesetting industry dummy text o g and typesetting industry.Lorem Ipsum is sfnti nting and typesetting industry dummy text o g and typesetting industry.</p>
+    </div>
+    
+</div>
+                <!--<div class="content">
+                    <div id="toggle-btn">
+                        <ul>
+                            <li class="has-sub"><a href="#"><span>Why Wellness Merc ?</span>
+     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+     </a>
+                                <ul>
+                                    <li><a href="#"><span><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></span></a></li>
+                                    <li><a href="#"><span><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></span></a></li>
+                                    <li class="last"><a href="#"><span><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></span></a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>-->
+            </div>
+
+            <!--footer start-->
+            <footer>
+                <div class="bottom-main container">
+                    <ul class="bottom-left">
+                        <h3>Social</h3>
+                        <div class="social-icon">
+                            <li>
+                                <a href="#"><img src="nct-image/facebook.png"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="nct-image/twitter.png"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="nct-image/g+.png"></a>
+                            </li>
+                        </div>
+                        <h3>Subscribe to Newsletter</h3>
+                        <div class="email-address">
+                            <div class="email-text">
+                                <input class="form-control search-text" placeholder="Enter Email Address" type="email">
+                                <button class="btn btn-default search-btn" type="button">GO</button>
+                            </div>
+                        </div>
+                    </ul>
+                    <ul class="bottom-left">
+                        <h3>Shopping</h3>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Advertise</a></li>
+                        <li><a href="#">Test</a></li>
+                    </ul>
+                    <ul class="bottom-left">
+                        <h3>Help & Support</h3>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Advertise</a></li>
+                        <li><a href="#">Test</a></li>
+                    </ul>
+                    <ul class="bottom-left">
+                        <h3>Ewallet</h3>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Advertise</a></li>
+                        <li><a href="#">Test</a></li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <div class="container">
+                        <h5>Copyright © 2016 NCrypted. All Rights Reserved </h5>
+                        <a class="nct-logo" href="#"><img src="nct-image/nct-logo.png"></a>
+                    </div>
+                </div>
+            </footer>
+            <!--footer END-->
+        </div>
+    </div>
+
+    <script src="nct-js/nct-jquery.min.js" type="text/javascript"></script>
+    <script src="nct-js/nct-bootstrap.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="nct-js/domtab.js"></script>
+    <script>
+        $('.menuTrigger').click(function() {
+            $('.panel').toggleClass('isOpen');
+            $('.wrapper').toggleClass('pushed');
+        });
+
+        $('.openSubPanel').click(function() {
+            $(this).next('.subPanel').addClass('isOpen');
+        });
+
+        $('.closeSubPanel').click(function() {
+            $('.subPanel').removeClass('isOpen');
+        });
+
+        $('.closePanel').click(function() {
+            $('.panel').removeClass('isOpen');
+            $('.wrapper').removeClass('pushed');
+        });
+
+    </script>
+    <script>
+        $(document).ready(function() {
+            //Handles menu drop down
+            $('.dropdown-menu').find('form').click(function(e) {
+                e.stopPropagation();
+            });
+        });
+
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#Carousel').carousel({
+                interval: 5000
+            })
+        });
+
+    </script>
+    
+    <script>
+        $(document).ready(function() {
+            $(".box-height").click(function() {
+                $(".category-list").toggleClass("full-height");
+            });
+        });
+
+    </script>
+    <script>
+    $('.accordion').each(function () {
+	    var $accordian = $(this);
+	    $accordian.find('.accordion-head').on('click', function () {
+            $(this).removeClass('open').addClass('close');
+	        $accordian.find('.accordion-body').slideUp();
+	        if (!$(this).next().is(':visible')) {
+                $(this).removeClass('close').addClass('open');
+	            $(this).next().slideDown();
+	        }
+	    });
+	});
+        
+    </script>
+</body>
+
+</html>

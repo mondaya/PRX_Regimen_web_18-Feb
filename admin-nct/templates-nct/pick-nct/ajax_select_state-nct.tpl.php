@@ -1,0 +1,1 @@
+<select name="state" id="state" class="form-control selectBox-bg required">%STATE_OPTION%</select>

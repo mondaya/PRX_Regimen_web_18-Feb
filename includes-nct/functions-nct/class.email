@@ -1,0 +1,230 @@
+<?php
+class Email  {
+	function sendMail($emailArr = array())
+	{
+		$name       = isset($emailArr["name"]) ? $emailArr["name"] : '';
+		$email      = isset($emailArr["email"]) ? $emailArr["email"] : array();
+		$fromEmail  = isset($emailArr["fromEmail"]) ? $emailArr["fromEmail"] : FROM_EMAIL;
+		$senderName = isset($emailArr["senderName"]) ? $emailArr["senderName"] : FROM_NM;
+		$subject    = isset($emailArr["subject"]) ? $emailArr["subject"] : '';
+		$message    = isset($emailArr["content"]) ? $emailArr["content"] : '';
+		$cc         = array();
+		$bcc        = array();
+		$read       = array();
+		$reply      = array();
+		
+		$to = array('0' => array('name' => $name, 'email' => $email));    
+		$header = genrateHeader($to, $cc, $bcc, $senderName, $fromEmail, $reply, false, $read, false);
+		if ($_SERVER["SERVER_NAME"] != 'nct25') {
+			if (@mail(genrateHeaderStr($to), $subject, $message, $header)) {
+				return true;
+			} else {
+				return false;
+			}
+		}
+		return true;
+	}
+	function genrateHeader($to, $cc = array(), $bcc = array(), $senderName = "", $fromEmail, $reply = array(), $setReply = false, $read = array(), $readRecipt = false)
+	{
+		$setheader = "";
+		$setheader .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+		$setheader .= 'From: ' . $senderName . ' <' . $fromEmail . '>' . "\r\n";
+		$setheader .= genrateHeaderStr($to, 'To');
+		if (is_array($cc) && count($cc) > 0) {
+			$setheader .= genrateHeaderStr($cc, 'Cc');
+		}
+		if (is_array($bcc) && count($bcc) > 0) {
+			$setheader .= genrateHeaderStr($bcc, 'Bcc');
+		}
+		if (is_array($reply) && ($setReply == true) && (count($reply) > 0)) {
+			
+			$setheader .= genrateHeaderStr($reply, 'Reply-To');
+		}
+		if (is_array($read) && ($readRecipt == true) && (count($read) > 0)) {
+			$setheader .= genrateHeaderStr($read, 'Disposition-Notification-To');
+		}
+		return $setheader;
+	}
+	
+	function genrateHeaderStr($whom, $param = '')
+	{
+		$returnHeader = '';
+		if ($param == '') {
+			if (count($whom) > 0) {
+				$i = 0;
+				foreach ($whom as $rVal) {
+					$i++;
+					if ($i == count($whom)) {
+						$returnHeader .= strtolower($rVal['email']);
+					} else {
+						$returnHeader .= strtolower($rVal['email']) . ', ';
+					}
+				}
+			}
+		} else {
+			$returnHeader .= $param . ': ';
+			if (count($whom) > 0) {
+				$i = 0;
+				foreach ($whom as $rVal) {
+					$i++;
+					if ($i == count($whom)) {
+						$returnHeader .= ucwords($rVal['name']) . ' <' . strtolower($rVal['email']) . '>' . "\r\n";
+					} else {
+						$returnHeader .= ucwords($rVal['name']) . ' <' . strtolower($rVal['email']) . '>, ';
+					}
+				}
+			}
+		}
+		return $returnHeader;
+	}
+	
+	function sendEmailAddress($to, $subject, $message)
+	{
+		
+	
+	#    $headers.= "From: " . SITE_NM . " <" . ADMIN_EMAIL . ">\r\n";
+		//$headers.= "Reply-To: noreply <noreply@ncrypted.com>\r\n";
+	#	$headers.= "X-Mailer: PHP/" . phpversion()."\r\n";
+	
+	#	$headers.= "MIME-Version: 1.0\r\n";
+	#	$headers.= "Content-type: text/html; charset=iso-8859-1\r\n";
+		
+		$headers= "Reply-To: " . SITE_NM . " <" . ADMIN_EMAIL . ">\r\n";
+		$headers.= "From: " . SITE_NM . " <" . ADMIN_EMAIL . ">\r\n";
+		$headers.= "MIME-Version: 1.0\r\n";
+		$headers.= "Content-type: text/html; charset=iso-8859-1\r\n";
+			
+		if ($_SERVER["SERVER_NAME"] != 'nct25') {
+			if (@mail($to,$subject,$message,$headers)) {
+				return true;
+			} else {
+				return false;
+			}
+		}
+		return true;
+	}
+	
+	function showAvailableVariables($types)
+	{
+		//echo $types; exit;
+		$return = "";
+		
+		if ($types == 1) {
+			$return = '<div class="fclear"><strong>###greetings###</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First Name</div>
+						<div class="fclear"><strong>###firstName###</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First Name</div>
+						<div class="fclear"><strong>###lastName###</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Last Name</div>
+						<div class="fclear"><strong>###email###</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email</div>
+						
+						<div class="fclear"><strong>###varActiveLink###</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Activation Link</div>	
+						';
+		}
+		
+		else if ($types == 2) {
+			$return = '<div class="fclear"><strong>###greetings###</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First Name</div>
+						<div class="fclear"><strong>###varEmail###</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;User Email</div>
+						<div class="fclear"><strong>###varPassword###</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password</div>
+						';
+		} else if ($types == 3) {
+			$return = '<div class="fclear"><strong>###greetings###</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First Name</div>
+						<div class="fclear"><strong>###merchantName###</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Merchant Name</div>
+						<div class="fclear"><strong>###price###</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price</div>
+						<div class="fclear"><strong>###nowPrice###</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Now Price</div>
+						<div class="fclear"><strong>###categoryName###</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Category Name</div>
+						<div class="fclear"><strong>###cityName###</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;City Name</div>
+						<div class="fclear"><strong>###dealUrl###</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Link to deal url</div>
+						<div class="fclear"><strong>###expiryDate###</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Expiry Date</div>';
+			
+		} else if ($types == 4) {
+			$return = '<div class="fclear"><strong>###greetings###</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First Name</div>
+					<div class="fclear"><strong>###name###</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact Us name</div>
+					<div class="fclear"><strong>###phone###</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phone</div>
+					<div class="fclear"><strong>###email###</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email</div>
+					<div class="fclear"><strong>###comment###</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comment</div>';
+			
+		} else if ($types == 5) {
+			$return = '<div class="fclear"><strong>###greetings###</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First Name</div>
+					<div class="fclear"><strong>###email###</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Registered email</div>
+					<div class="fclear"><strong>###password###</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;password</div>';
+			
+		} else if ($types == 7) {
+			$return = '<div class="fclear"><strong>###greetings###</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First Name</div>
+					<div class="fclear"><strong>###enrollment###</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Representative enrollment Number.</div>';
+			
+			
+		} else if ($types == 8) {
+			$return = '<div class="fclear"><strong>###greetings###</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First Name</div>
+					';
+			
+		}
+		
+		return '<span><strong>Hint:</strong></span><br/>' . $return;
+	}
+	
+	function generateTemplates($greetings, $regards, $subject, $msgContent)
+	{
+		$content = '<html><body>';
+		$content .= '<div style="background-color:#F9F9F9; border:1px solid #E1E1E1; padding:25px; font-family:Verdana, Geneva, sans-serif">
+			<div style="padding:0 0 25px 0; color:#006; font-size:22px;"><strong><u>' . $subject . '</u></strong></div>
+			<div style="font-size:12px;">
+			<p>Hello' . ($greetings != '' ? '&nbsp;' . $greetings : '') . ',</p>            
+			<p>&nbsp;</p>
+			' . $msgContent . '
+			<p>&nbsp;</p>		
+			<p>Regards,<br />
+			' . $regards . '</p>
+				</div>
+			</div></body></html>';
+		return $content;
+	}
+	
+	function generateEmailTemplate($type, $arrayCont)
+	{
+		$qrysel         = mysql_query("SELECT templates FROM tbl_templates WHERE id = '" . $type . "'");
+		$fetchEmailtemp = mysql_fetch_assoc($qrysel);
+		
+		$message = trim(stripslashes($fetchEmailtemp["templates"]));
+		$message = str_replace("###greetings###", $arrayCont["greetings"], $message);
+		
+		if ($type == '1') {
+			$activationURL = '<a href="' . SITE_MOD . '/registration/activation.php?u=act&aKey=' . $arrayCont["actKey"] . '" style="color:#F60; text-decoration:none;" >Click here to active your account.</a>';
+			$message       = str_replace("###firstName###", $arrayCont["firstName"], $message);
+			$message       = str_replace("###password###", $arrayCont["password"], $message);
+			$message       = str_replace("###varActiveLink###", $activationURL, $message);
+			$message       = str_replace("###adminName###", "Admin", $message);
+		} else if ($type == '2') {
+			$activationURL = '<a href="' . SITE_URL . 'change-password/' . $arrayCont["actKey"] . '" style="color:#F60; text-decoration:none;" >Click here to Change Password.</a>';
+			$message       = str_replace("###firstName###", $arrayCont["firstName"], $message);
+			$message       = str_replace("###varActiveLink###", $activationURL, $message);
+			$message       = str_replace("###adminName###", "Admin", $message);
+			
+		} else if ($type == 3) //	for sending mail to customer //		
+			{
+			$message = str_replace("###merchantName###", $arrayCont["merchantName"], $message);
+			$message = str_replace("###dealName###", $arrayCont["dealName"], $message);
+			$message = str_replace("###price###", $arrayCont["price"], $message);
+			$message = str_replace("###discount###", $arrayCont["discount"], $message);
+			$message = str_replace("###expiryDate###", $arrayCont["expiryDate"], $message);
+		} else if ($type == 4) //	for sending email on contact us //		
+			{
+			$message = str_replace("###name###", $arrayCont["name"], $message);
+			$message = str_replace("###phone###", $arrayCont["phone"], $message);
+			$message = str_replace("###email###", $arrayCont["email"], $message);
+			$message = str_replace("###comment###", $arrayCont["comment"], $message);
+		} else if ($type == '5') {
+			$message = str_replace("###password###", $arrayCont["password"], $message);
+			$message = str_replace("###email###", $arrayCont["email"], $message);
+			$message = str_replace("###adminName###", "Admin", $message);
+		} else if ($type == '6') {
+			$message = str_replace("###DealTitle###", $arrayCont["DealTitle"], $message);
+			$message = str_replace("###DealLocation###", $arrayCont["DealLocation"], $message);
+			$message = str_replace("###DealDescription###", $arrayCont["DealDescription"], $message);
+			$message = str_replace("###DealImage###", $arrayCont["DealImage"], $message);
+			$message = str_replace("###DealUrl###", $arrayCont["DealUrl"], $message);
+			$message = str_replace("###expiryDate###", $arrayCont["expiryDate"], $message);
+			$message = str_replace("###cityName###", $arrayCont["cityName"], $message);
+			$message = str_replace("###adminName###", "Admin", $message);
+		}
+		return $message;
+	}
+}
+?>

@@ -1,0 +1,603 @@
+<html><head>
+
+<meta charset="UTF-8">
+
+<title>Shopping Cart</title>
+
+<base href="http://www.arcmanonline.com/">
+
+
+
+
+<link href="http://www.arcmanonline.com/image/data/cart.png" rel="icon">
+
+
+
+<link rel="stylesheet" type="text/css" href="catalog/view/theme/default/stylesheet/stylesheet.css">
+
+
+<link rel="stylesheet" type="text/css" href="catalog/view/javascript/jquery/colorbox/colorbox.css" media="screen">
+
+
+<script type="text/javascript" src="catalog/view/javascript/jquery/jquery-1.7.1.min.js"></script>
+
+<script type="text/javascript" src="catalog/view/javascript/jquery/ui/jquery-ui-1.8.16.custom.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="catalog/view/javascript/jquery/ui/themes/ui-lightness/jquery-ui-1.8.16.custom.css">
+
+<script type="text/javascript" src="catalog/view/javascript/common.js"></script>
+
+
+<script type="text/javascript" src="catalog/view/javascript/jquery/colorbox/jquery.colorbox-min.js"></script>
+
+
+<!--[if IE 7]> 
+
+<link rel="stylesheet" type="text/css" href="catalog/view/theme/default/stylesheet/ie7.css" />
+
+<![endif]-->
+
+<!--[if lt IE 7]>
+
+<link rel="stylesheet" type="text/css" href="catalog/view/theme/default/stylesheet/ie6.css" />
+
+<script type="text/javascript" src="catalog/view/javascript/DD_belatedPNG_0.0.8a-min.js"></script>
+
+<script type="text/javascript">
+
+DD_belatedPNG.fix('#logo img');
+
+</script>
+
+<![endif]-->
+
+
+
+</head>
+
+<body>
+
+
+
+<div id="header">
+
+	<div style="width:1000px; margin-left:auto; margin-right:auto;">
+
+	
+	<div id="logo"><a href="http://www.arcmanonline.com/index.php?route=common/home"><img src="http://www.arcmanonline.com/image/data/logo.jpg" title="Arcman Online " alt="Arcman Online "></a></div>
+
+	
+	<div id="logo-text"><img src="catalog/view/theme/default/image/logowords.jpg" alt=""></div>
+
+	
+	
+	<!--
+
+	<div id="cart_box">
+	<div class="heading">My Shopping Cart</div>
+	<div class="content">
+		<div id="cart-total">Your Shopping Cart:<br /><strong>1</strong> Item, Price <strong>$199.00</strong></div>
+		<div style="border-top:solid 1px #008BC8;clear:both;margin-top:8px;margin-bottom:8px;"></div>
+		<div class="checkout"><a href="https://www.arcmanonline.com/index.php?route=checkout/checkout">Check Out</a> <img src="catalog/view/theme/default/image/farword.gif" width="3" height="5" style="padding-bottom:2px;" /></div>
+	</div>
+</div>
+	<div id="search">
+
+	<div class="button-search"></div>
+
+	<input type="text" name="search" placeholder="Search" value="" />
+
+	</div>
+
+	-->
+
+	<div>
+
+		<div class="links">
+
+		<a href="https://www.arcmanonline.com/index.php?route=account/account">My Account</a><a href="http://www.arcmanonline.com/index.php?route=checkout/cart">Shopping Cart</a><a href="https://www.arcmanonline.com/index.php?route=checkout/checkout">Checkout</a>
+
+		
+		<a href="https://www.arcmanonline.com/index.php?route=account/login">Sign Up</a>
+		</div>
+
+		<div class="header-cart">
+
+		<a href="http://www.arcmanonline.com/index.php?route=checkout/cart"><strong>1</strong><span>Items</span></a>
+
+		</div>
+
+		<div style="clear:both;"></div>
+
+	</div>
+
+	<div id="menu">
+
+		<ul>
+
+			<li style="background:none;"><a href="http://www.arcmanonline.com/">HOME</a></li>
+
+			<li><a href="http://www.arcmanonline.com//index.php?route=information/information&amp;information_id=4">COMPANY</a></li>
+
+			<li><a href="http://www.arcmanonline.com//index.php?route=information/information&amp;information_id=7">FAQ</a></li>
+
+			<li><a href="http://www.arcmanonline.com/index.php?route=product/list">PRODUCT</a></li>
+
+			<li><a href="http://www.arcmanonline.com/index.php?route=product/category&amp;path=67">PREMIUM PRODUCT</a></li>
+
+			<li><a href="http://www.arcmanonline.com/index.php?route=product/promotion">PROMOTION</a></li>
+
+			<!-- <li><a href="http://www.arcmanonline.com//index.php?route=information/information&amp;information_id=8">BUY ONLINE</a></li> -->
+
+			<li><a href="http://www.arcmanonline.com//index.php?route=account/account">MEMBER CENTER</a></li>
+
+			<li><a href="http://www.arcmanonline.com//index.php?route=information/contact">CONTACT US</a></li>
+
+		</ul>
+
+	</div>
+
+	</div>
+
+</div>
+
+
+
+<div id="container">
+
+
+<div id="notification"></div>
+
+
+<div class="breadcrumb">
+  	<span>You are here:</span>
+        <a href="http://www.arcmanonline.com/index.php?route=common/home">Home</a>
+         &gt; <a href="http://www.arcmanonline.com/index.php?route=checkout/cart">Shopping Cart</a>
+      </div>
+
+ 
+<div id="content">  
+  
+  <div class="box">
+	  <div class="box-heading">Shopping Cart</div>
+	  <div style="height:8px;background: url('catalog/view/theme/default/image/middle_shadow.jpg') repeat-x;border-left: 1px solid #DBDEE1;	border-right: 1px solid #DBDEE1;"></div> 
+	  <div class="box-content"> 
+  	      
+  <form action="http://www.arcmanonline.com/index.php?route=checkout/cart" method="post" enctype="multipart/form-data">
+    <div class="cart-info">
+      <table>
+        <thead>
+          <tr>
+            <td class="image">Image</td>
+            <td class="name">Product Name</td>
+            <td class="model">Model</td>
+            <td class="quantity">Quantity</td>
+            <td class="price">Unit Price</td>
+            <td class="total">Total</td>
+          </tr>
+        </thead>
+        <tbody>
+                                <tr>
+            <td class="image">              <a href="http://www.arcmanonline.com/index.php?route=product/product&amp;product_id=93"><img src="http://www.arcmanonline.com/image/cache/data/IMG_0075_cellight90-47x47.JPG" alt="Cellight Nutritional Phytoplankton 90# Single Bottle" title="Cellight Nutritional Phytoplankton 90# Single Bottle"></a>
+              </td>
+            <td class="name"><a href="http://www.arcmanonline.com/index.php?route=product/product&amp;product_id=93">Cellight Nutritional Phytoplankton 90# Single Bottle</a>
+                            <div>
+                                              </div>
+              </td>
+            <td class="model">CNP-90</td>
+            <td class="quantity"><input type="text" name="quantity[93::]" value="1" size="1">
+              &nbsp;
+              <input type="image" src="catalog/view/theme/default/image/update.png" alt="Update" title="Update">
+              &nbsp;<a href="http://www.arcmanonline.com/index.php?route=checkout/cart&amp;remove=93::"><img src="catalog/view/theme/default/image/remove.png" alt="Remove" title="Remove"></a></td>
+            <td class="price">$199.00</td>
+            <td class="total">$199.00</td>
+          </tr>
+                            </tbody>
+      </table>
+    </div>
+  </form>
+    <h2>What would you like to do next?</h2>
+  <div class="content">
+    <p>Choose if you have a discount code or reward points you want to use or would like to estimate your delivery cost.</p>
+    <table class="radio">
+            <tbody><tr class="highlight">
+        <td>          <input type="radio" name="next" value="coupon" id="use_coupon">
+          </td>
+        <td><label for="use_coupon">Use Coupon Code</label></td>
+      </tr>
+                  <tr class="highlight">
+        <td>          <input type="radio" name="next" value="voucher" id="use_voucher">
+          </td>
+        <td><label for="use_voucher">Use Gift Voucher</label></td>
+      </tr>
+                      </tbody></table>
+  </div>
+  <div class="cart-module">
+    <div id="coupon" class="content" style="display: none;">
+      <form action="http://www.arcmanonline.com/index.php?route=checkout/cart" method="post" enctype="multipart/form-data">
+        Enter your coupon here:&nbsp;
+        <input type="text" name="coupon" value="">
+        <input type="hidden" name="next" value="coupon">
+        &nbsp;
+        <input type="submit" value="Apply Coupon" class="button1">
+      </form>
+    </div>
+    <div id="voucher" class="content" style="display: none;">
+      <form action="http://www.arcmanonline.com/index.php?route=checkout/cart" method="post" enctype="multipart/form-data">
+        Enter your gift voucher code here:&nbsp;
+        <input type="text" name="voucher" value="">
+        <input type="hidden" name="next" value="voucher">
+        &nbsp;
+        <input type="submit" value="Apply Voucher" class="button1">
+      </form>
+    </div>
+    <div id="reward" class="content" style="display: none;">
+      <form action="http://www.arcmanonline.com/index.php?route=checkout/cart" method="post" enctype="multipart/form-data">
+        Points to use (Max 0):&nbsp;
+        <input type="text" name="reward" value="">
+        <input type="hidden" name="next" value="reward">
+        &nbsp;
+        <input type="submit" value="Apply Points" class="button1">
+      </form>
+    </div>
+    <div id="shipping" class="content" style="display: none;">
+      <p>Enter your destination to get a shipping estimate.</p>
+      <table>
+        <tbody><tr>
+          <td><span class="required">*</span> Country:</td>
+          <td><select name="country_id">
+              <option value=""> --- Please Select --- </option>
+                                          <option value="244">Aaland Islands</option>
+                                                        <option value="1">Afghanistan</option>
+                                                        <option value="2">Albania</option>
+                                                        <option value="3">Algeria</option>
+                                                        <option value="4">American Samoa</option>
+                                                        <option value="5">Andorra</option>
+                                                        <option value="6">Angola</option>
+                                                        <option value="7">Anguilla</option>
+                                                        <option value="8">Antarctica</option>
+                                                        <option value="9">Antigua and Barbuda</option>
+                                                        <option value="10">Argentina</option>
+                                                        <option value="11">Armenia</option>
+                                                        <option value="12">Aruba</option>
+                                                        <option value="13">Australia</option>
+                                                        <option value="14">Austria</option>
+                                                        <option value="15">Azerbaijan</option>
+                                                        <option value="16">Bahamas</option>
+                                                        <option value="17">Bahrain</option>
+                                                        <option value="18">Bangladesh</option>
+                                                        <option value="19">Barbados</option>
+                                                        <option value="20">Belarus</option>
+                                                        <option value="21">Belgium</option>
+                                                        <option value="22">Belize</option>
+                                                        <option value="23">Benin</option>
+                                                        <option value="24">Bermuda</option>
+                                                        <option value="25">Bhutan</option>
+                                                        <option value="26">Bolivia</option>
+                                                        <option value="245">Bonaire, Sint Eustatius and Saba</option>
+                                                        <option value="27">Bosnia and Herzegovina</option>
+                                                        <option value="28">Botswana</option>
+                                                        <option value="29">Bouvet Island</option>
+                                                        <option value="30">Brazil</option>
+                                                        <option value="31">British Indian Ocean Territory</option>
+                                                        <option value="32">Brunei Darussalam</option>
+                                                        <option value="33">Bulgaria</option>
+                                                        <option value="34">Burkina Faso</option>
+                                                        <option value="35">Burundi</option>
+                                                        <option value="36">Cambodia</option>
+                                                        <option value="37">Cameroon</option>
+                                                        <option value="38">Canada</option>
+                                                        <option value="251">Canary Islands</option>
+                                                        <option value="39">Cape Verde</option>
+                                                        <option value="40">Cayman Islands</option>
+                                                        <option value="41">Central African Republic</option>
+                                                        <option value="42">Chad</option>
+                                                        <option value="43">Chile</option>
+                                                        <option value="44">China</option>
+                                                        <option value="45">Christmas Island</option>
+                                                        <option value="46">Cocos (Keeling) Islands</option>
+                                                        <option value="47">Colombia</option>
+                                                        <option value="48">Comoros</option>
+                                                        <option value="49">Congo</option>
+                                                        <option value="50">Cook Islands</option>
+                                                        <option value="51">Costa Rica</option>
+                                                        <option value="52">Cote D'Ivoire</option>
+                                                        <option value="53">Croatia</option>
+                                                        <option value="54">Cuba</option>
+                                                        <option value="246">Curacao</option>
+                                                        <option value="55">Cyprus</option>
+                                                        <option value="56">Czech Republic</option>
+                                                        <option value="237">Democratic Republic of Congo</option>
+                                                        <option value="57">Denmark</option>
+                                                        <option value="58">Djibouti</option>
+                                                        <option value="59">Dominica</option>
+                                                        <option value="60">Dominican Republic</option>
+                                                        <option value="61">East Timor</option>
+                                                        <option value="62">Ecuador</option>
+                                                        <option value="63">Egypt</option>
+                                                        <option value="64">El Salvador</option>
+                                                        <option value="65">Equatorial Guinea</option>
+                                                        <option value="66">Eritrea</option>
+                                                        <option value="67">Estonia</option>
+                                                        <option value="68">Ethiopia</option>
+                                                        <option value="69">Falkland Islands (Malvinas)</option>
+                                                        <option value="70">Faroe Islands</option>
+                                                        <option value="71">Fiji</option>
+                                                        <option value="72">Finland</option>
+                                                        <option value="74">France, Metropolitan</option>
+                                                        <option value="75">French Guiana</option>
+                                                        <option value="76">French Polynesia</option>
+                                                        <option value="77">French Southern Territories</option>
+                                                        <option value="126">FYROM</option>
+                                                        <option value="78">Gabon</option>
+                                                        <option value="79">Gambia</option>
+                                                        <option value="80">Georgia</option>
+                                                        <option value="81">Germany</option>
+                                                        <option value="82">Ghana</option>
+                                                        <option value="83">Gibraltar</option>
+                                                        <option value="84">Greece</option>
+                                                        <option value="85">Greenland</option>
+                                                        <option value="86">Grenada</option>
+                                                        <option value="87">Guadeloupe</option>
+                                                        <option value="88">Guam</option>
+                                                        <option value="89">Guatemala</option>
+                                                        <option value="241">Guernsey</option>
+                                                        <option value="90">Guinea</option>
+                                                        <option value="91">Guinea-Bissau</option>
+                                                        <option value="92">Guyana</option>
+                                                        <option value="93">Haiti</option>
+                                                        <option value="94">Heard and Mc Donald Islands</option>
+                                                        <option value="95">Honduras</option>
+                                                        <option value="96">Hong Kong</option>
+                                                        <option value="97">Hungary</option>
+                                                        <option value="98">Iceland</option>
+                                                        <option value="99">India</option>
+                                                        <option value="100">Indonesia</option>
+                                                        <option value="101">Iran (Islamic Republic of)</option>
+                                                        <option value="102">Iraq</option>
+                                                        <option value="103">Ireland</option>
+                                                        <option value="104">Israel</option>
+                                                        <option value="105">Italy</option>
+                                                        <option value="106">Jamaica</option>
+                                                        <option value="107">Japan</option>
+                                                        <option value="240">Jersey</option>
+                                                        <option value="108">Jordan</option>
+                                                        <option value="109">Kazakhstan</option>
+                                                        <option value="110">Kenya</option>
+                                                        <option value="111">Kiribati</option>
+                                                        <option value="113">Korea, Republic of</option>
+                                                        <option value="114">Kuwait</option>
+                                                        <option value="115">Kyrgyzstan</option>
+                                                        <option value="116">Lao People's Democratic Republic</option>
+                                                        <option value="117">Latvia</option>
+                                                        <option value="118">Lebanon</option>
+                                                        <option value="119">Lesotho</option>
+                                                        <option value="120">Liberia</option>
+                                                        <option value="121">Libyan Arab Jamahiriya</option>
+                                                        <option value="122">Liechtenstein</option>
+                                                        <option value="123">Lithuania</option>
+                                                        <option value="124">Luxembourg</option>
+                                                        <option value="125">Macau</option>
+                                                        <option value="127">Madagascar</option>
+                                                        <option value="128">Malawi</option>
+                                                        <option value="129">Malaysia</option>
+                                                        <option value="130">Maldives</option>
+                                                        <option value="131">Mali</option>
+                                                        <option value="132">Malta</option>
+                                                        <option value="133">Marshall Islands</option>
+                                                        <option value="134">Martinique</option>
+                                                        <option value="135">Mauritania</option>
+                                                        <option value="136">Mauritius</option>
+                                                        <option value="137">Mayotte</option>
+                                                        <option value="138">Mexico</option>
+                                                        <option value="139">Micronesia, Federated States of</option>
+                                                        <option value="140">Moldova, Republic of</option>
+                                                        <option value="141">Monaco</option>
+                                                        <option value="142">Mongolia</option>
+                                                        <option value="242">Montenegro</option>
+                                                        <option value="143">Montserrat</option>
+                                                        <option value="144">Morocco</option>
+                                                        <option value="145">Mozambique</option>
+                                                        <option value="146">Myanmar</option>
+                                                        <option value="147">Namibia</option>
+                                                        <option value="148">Nauru</option>
+                                                        <option value="149">Nepal</option>
+                                                        <option value="150">Netherlands</option>
+                                                        <option value="151">Netherlands Antilles</option>
+                                                        <option value="152">New Caledonia</option>
+                                                        <option value="153">New Zealand</option>
+                                                        <option value="154">Nicaragua</option>
+                                                        <option value="155">Niger</option>
+                                                        <option value="156">Nigeria</option>
+                                                        <option value="157">Niue</option>
+                                                        <option value="158">Norfolk Island</option>
+                                                        <option value="112">North Korea</option>
+                                                        <option value="159">Northern Mariana Islands</option>
+                                                        <option value="160">Norway</option>
+                                                        <option value="161">Oman</option>
+                                                        <option value="162">Pakistan</option>
+                                                        <option value="163">Palau</option>
+                                                        <option value="247">Palestinian Territory, Occupied</option>
+                                                        <option value="164">Panama</option>
+                                                        <option value="165">Papua New Guinea</option>
+                                                        <option value="166">Paraguay</option>
+                                                        <option value="167">Peru</option>
+                                                        <option value="168">Philippines</option>
+                                                        <option value="169">Pitcairn</option>
+                                                        <option value="170">Poland</option>
+                                                        <option value="171">Portugal</option>
+                                                        <option value="172">Puerto Rico</option>
+                                                        <option value="173">Qatar</option>
+                                                        <option value="174">Reunion</option>
+                                                        <option value="175">Romania</option>
+                                                        <option value="176">Russian Federation</option>
+                                                        <option value="177">Rwanda</option>
+                                                        <option value="178">Saint Kitts and Nevis</option>
+                                                        <option value="179">Saint Lucia</option>
+                                                        <option value="180">Saint Vincent and the Grenadines</option>
+                                                        <option value="181">Samoa</option>
+                                                        <option value="182">San Marino</option>
+                                                        <option value="183">Sao Tome and Principe</option>
+                                                        <option value="184">Saudi Arabia</option>
+                                                        <option value="185">Senegal</option>
+                                                        <option value="243">Serbia</option>
+                                                        <option value="186">Seychelles</option>
+                                                        <option value="187">Sierra Leone</option>
+                                                        <option value="188">Singapore</option>
+                                                        <option value="189">Slovak Republic</option>
+                                                        <option value="190">Slovenia</option>
+                                                        <option value="191">Solomon Islands</option>
+                                                        <option value="192">Somalia</option>
+                                                        <option value="193">South Africa</option>
+                                                        <option value="194">South Georgia &amp; South Sandwich Islands</option>
+                                                        <option value="248">South Sudan</option>
+                                                        <option value="195">Spain</option>
+                                                        <option value="196">Sri Lanka</option>
+                                                        <option value="249">St. Barthelemy</option>
+                                                        <option value="197">St. Helena</option>
+                                                        <option value="250">St. Martin (French part)</option>
+                                                        <option value="198">St. Pierre and Miquelon</option>
+                                                        <option value="199">Sudan</option>
+                                                        <option value="200">Suriname</option>
+                                                        <option value="201">Svalbard and Jan Mayen Islands</option>
+                                                        <option value="202">Swaziland</option>
+                                                        <option value="203">Sweden</option>
+                                                        <option value="204">Switzerland</option>
+                                                        <option value="205">Syrian Arab Republic</option>
+                                                        <option value="206">Taiwan</option>
+                                                        <option value="207">Tajikistan</option>
+                                                        <option value="208">Tanzania, United Republic of</option>
+                                                        <option value="209">Thailand</option>
+                                                        <option value="210">Togo</option>
+                                                        <option value="211">Tokelau</option>
+                                                        <option value="212">Tonga</option>
+                                                        <option value="213">Trinidad and Tobago</option>
+                                                        <option value="214">Tunisia</option>
+                                                        <option value="215">Turkey</option>
+                                                        <option value="216">Turkmenistan</option>
+                                                        <option value="217">Turks and Caicos Islands</option>
+                                                        <option value="218">Tuvalu</option>
+                                                        <option value="219">Uganda</option>
+                                                        <option value="220">Ukraine</option>
+                                                        <option value="221">United Arab Emirates</option>
+                                                        <option value="222">United Kingdom</option>
+                                                        <option value="223" selected="selected">United States</option>
+                                                        <option value="224">United States Minor Outlying Islands</option>
+                                                        <option value="225">Uruguay</option>
+                                                        <option value="226">Uzbekistan</option>
+                                                        <option value="227">Vanuatu</option>
+                                                        <option value="228">Vatican City State (Holy See)</option>
+                                                        <option value="229">Venezuela</option>
+                                                        <option value="230">Viet Nam</option>
+                                                        <option value="231">Virgin Islands (British)</option>
+                                                        <option value="232">Virgin Islands (U.S.)</option>
+                                                        <option value="233">Wallis and Futuna Islands</option>
+                                                        <option value="234">Western Sahara</option>
+                                                        <option value="235">Yemen</option>
+                                                        <option value="238">Zambia</option>
+                                                        <option value="239">Zimbabwe</option>
+                                        </select></td>
+        </tr>
+        <tr>
+          <td><span class="required">*</span> Region / State:</td>
+          <td><select name="zone_id">
+            </select></td>
+        </tr>
+        <tr>
+          <td><span id="postcode-required" class="required">*</span> Post Code:</td>
+          <td><input type="text" name="postcode" value=""></td>
+        </tr>
+      </tbody></table>
+      <input type="button" value="Get Quotes" id="button-quote" class="button1">
+    </div>
+  </div>
+    <div class="cart-total">
+    <table id="total">
+            <tbody><tr>
+        <td class="right"><b>Sub-Total:</b></td>
+        <td class="right"><span class="font_style14">$199.00</span></td>
+      </tr>
+            <tr>
+        <td class="right"><b>Total:</b></td>
+        <td class="right"><span class="font_style14">$199.00</span></td>
+      </tr>
+          </tbody></table>
+  </div>
+
+  <div class="buttons">
+    <div class="right"><a href="https://www.arcmanonline.com/index.php?route=checkout/checkout" class="button"> Proceed to Checkout </a></div>
+    <div class="left"><a href="http://www.arcmanonline.com/index.php?route=common/home" class="button">Continue Shopping</a></div>
+  </div>
+	</div>
+	</div>
+  
+  
+
+  </div>
+<script type="text/javascript"><!--
+$('input[name=\'next\']').bind('change', function() {
+	$('.cart-module > div').hide();
+	
+	$('#' + this.value).show();
+});
+//--></script>
+<div id="footer">
+	<!-- <div class="column" style="width:160px;"> -->
+    <div class="column">
+		<ul>
+		<li><a href="index.php?route=information/information&amp;information_id=4">About Us</a></li>
+		<li><a href="index.php?route=information/information&amp;information_id=11">Customer Service</a></li>
+		<li><a href="index.php?route=information/information&amp;information_id=3">Privacy Policy</a></li>
+		<li><a href="http://www.arcmanonline.com/index.php?route=information/sitemap">Site Map</a></li>
+		<li><a href="index.php?route=information/information&amp;information_id=5">Terms &amp; Conditions</a></li>
+		<li><a href="index.php?route=account/return/insert">Orders and Returns</a></li>
+		<li><a href="http://www.arcmanonline.com/index.php?route=information/contact">Contact Us</a></li>
+		<li><a href="https://www.arcmanonline.com/index.php?route=account/newsletter">Newsletter</a></li>
+		</ul> 
+	</div>
+	<!-- <div class="column" style="width:160px;"> -->
+    <div class="column">
+		<ul>
+		<li><a href="index.php?route=information/information&amp;information_id=6">Shipping &amp; Returns</a></li>
+		<li><a href="index.php?route=information/information&amp;information_id=9">Secure Shopping</a></li>
+		<li><a href="index.php?route=information/information&amp;information_id=10">International Shipping</a></li>
+		<li><a href="https://www.arcmanonline.com/index.php?route=affiliate/account">Affiliates</a></li>
+		</ul>
+	</div>
+	
+	<!-- <div class="column" style="width:160px;"> -->
+    <div class="column">
+		<ul>
+		<li><a href="https://www.arcmanonline.com/index.php?route=account/account">Sign In</a></li>
+		<li><a href="index.php?route=checkout/cart">View Cart</a></li>
+		<li><a href="https://www.arcmanonline.com/index.php?route=account/wishlist">Wish List</a></li>
+		<li><a href="https://www.arcmanonline.com/index.php?route=account/order">Order History</a></li>
+		<li><a href="index.php?route=information/information&amp;information_id=7">Help</a></li>
+		</ul>
+	</div>
+
+	<div class="column">
+		<span id="siteseal"><script type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=ASmCdCbfkxaUv1ITJa4lKzR4Lkchgowt62o8lHmzn3O9b3Z9f9pB9ODB"></script></span>
+		<!-- <img src="catalog/view/theme/default/image/f_icon.jpg" alt="" border="0" />
+		<img src="catalog/view/theme/default/image/t_icon.jpg" alt="" border="0" />
+		<img src="catalog/view/theme/default/image/y_icon.jpg" alt="" border="0" />
+		<img src="catalog/view/theme/default/image/pinterest.jpg" alt="" border="0" />
+		<img src="catalog/view/theme/default/image/instagram.jpg" alt="" border="0" /> -->
+		<br>
+		<div style="color:#666666;font-family:Arial, Helvetica, sans-serif;font-size:12px;margin-top:10px;">
+		<!-- <div style="font-weight:bold; float:left; -top:5px;">We Accept : </div> -->
+		<!-- <br/> -->
+		<a href="https://www.paypal.com/webapps/mpp/paypal-popup" title="How PayPal Works" onclick="javascript:window.open('https://www.paypal.com/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img src="catalog/view/theme/default/image/paypalCheckOut.png" alt="PayPal Acceptance Mark" border="0"></a>
+		</div>
+		</div>
+	</div>
+</div>
+
+<div id="powered">
+	<div style="width:1000px; margin-left:auto; margin-right:auto;">
+		<div class="logo1"></div>
+		<div class="powered_info">
+			Copyright © Arcman Online  2016. All right reserved.		</div>
+	</div>
+</div>
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxLoadedContent" style="width: 0px; height: 0px; overflow: hidden; float: left;"></div><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><div id="cboxNext" style="float: left;"></div><div id="cboxPrevious" style="float: left;"></div><div id="cboxSlideshow" style="float: left;"></div><div id="cboxClose" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div></body></html>

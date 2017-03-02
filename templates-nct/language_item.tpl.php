@@ -1,0 +1,1 @@
+<li><a href="javascript:void(0);" data-id="%ID%">%LANGUAGE_NAME%</a></li>

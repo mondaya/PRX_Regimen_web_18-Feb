@@ -1,0 +1,601 @@
+<html><head>
+	<title>A.C. Grace - Unique E, The Natural Choice - Shopping Cart</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	
+	
+	
+	
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<!-- Set viewport to iPhone portrait mode --> 
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="msapplication-tap-highlight" content="no">
+	<link rel="shortcut icon" href="http://cdn2.bigcommerce.com/server4300/37a99/product_images/favicon.ico">
+	<!-- begin: js page tag -->
+	<script type="text/javascript" async="" src="http://cdn4.bigcommerce.com/r-93977e3ef083a471ec62787ea8e74be20af52b9d/app/assets/js/vendor/bigcommerce/fornax.min.js"></script><script type="text/javascript" async="" src="http://cdn4.bigcommerce.com/r-93977e3ef083a471ec62787ea8e74be20af52b9d/app/assets/js/vendor/bigcommerce/analytics.min.js"></script><script type="text/javascript" async="" defer="" src="http://cdn4.bigcommerce.com/r-93977e3ef083a471ec62787ea8e74be20af52b9d/javascript/jirafe/beacon_api.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script language="javascript" type="text/javascript">//<![CDATA[
+		(function(){
+			// this happens before external dependencies (and dom ready) to reduce page flicker
+			var node, i;
+			for (i = window.document.childNodes.length; i--;) {
+				node = window.document.childNodes[i];
+				if (node.nodeName == 'HTML') {
+					node.className += ' javascript';
+				}
+			}
+		})();
+	//]]></script>
+	<!-- end: js page tag -->
+
+	<link href="http://cdn4.bigcommerce.com/r-6a4ead4afc1bc3b3666fb257b54ecf8d4254c9e1/themes/__master/Styles/styles.css" type="text/css" rel="stylesheet"><link href="http://cdn4.bigcommerce.com/r-6a4ead4afc1bc3b3666fb257b54ecf8d4254c9e1/themes/__classicmobile/Styles/styles.css" media="all" type="text/css" rel="stylesheet">
+<link href="http://cdn4.bigcommerce.com/r-6a4ead4afc1bc3b3666fb257b54ecf8d4254c9e1/themes/__classicmobile/Styles/iselector.css" media="all" type="text/css" rel="stylesheet">
+<link href="http://cdn4.bigcommerce.com/r-6a4ead4afc1bc3b3666fb257b54ecf8d4254c9e1/themes/__classicmobile/Styles/default.css" media="all" type="text/css" rel="stylesheet">
+<!--[if IE]><link href="http://cdn4.bigcommerce.com/r-6a4ead4afc1bc3b3666fb257b54ecf8d4254c9e1/themes/__classicmobile/Styles/ie.css" media="all" type="text/css" rel="stylesheet" /><![endif]-->
+<link href="http://cdn4.bigcommerce.com/r-93977e3ef083a471ec62787ea8e74be20af52b9d/javascript/jquery/plugins/imodal/imodal.css" type="text/css" rel="stylesheet"><link type="text/css" rel="stylesheet" href="http://cdn4.bigcommerce.com/r-93977e3ef083a471ec62787ea8e74be20af52b9d/javascript/jquery/plugins/imodal/imodal.css?4f875">
+
+	<link href="http://cdn3.bigcommerce.com/r-6a4ead4afc1bc3b3666fb257b54ecf8d4254c9e1/themes/__classicmobile/Styles/font-awesome.min.css" type="text/css" rel="stylesheet">
+        <link href="http://cdn3.bigcommerce.com/r-6a4ead4afc1bc3b3666fb257b54ecf8d4254c9e1/themes/__classicmobile/Styles/uniform.default.css" type="text/css" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css">
+	<link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<!-- Tell the browsers about our RSS feeds -->
+	<link rel="alternate" type="application/rss+xml" title="Latest News (RSS 2.0)" href="http://www.acgrace.com/rss.php?action=newblogs&amp;type=rss">
+<link rel="alternate" type="application/atom+xml" title="Latest News (Atom 0.3)" href="http://www.acgrace.com/rss.php?action=newblogs&amp;type=atom">
+<link rel="alternate" type="application/rss+xml" title="New Products (RSS 2.0)" href="http://www.acgrace.com/rss.php?type=rss">
+<link rel="alternate" type="application/atom+xml" title="New Products (Atom 0.3)" href="http://www.acgrace.com/rss.php?type=atom">
+<link rel="alternate" type="application/rss+xml" title="Popular Products (RSS 2.0)" href="http://www.acgrace.com/rss.php?action=popularproducts&amp;type=rss">
+<link rel="alternate" type="application/atom+xml" title="Popular Products (Atom 0.3)" href="http://www.acgrace.com/rss.php?action=popularproducts&amp;type=atom">
+
+
+	<!-- Include visitor tracking code (if any) -->
+	<!-- Start Tracking Code for analytics_googleanalytics -->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-5111804-3', 'acgrace.com');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- End Tracking Code for analytics_googleanalytics -->
+
+
+	<script type="text/javascript" src="http://cdn4.bigcommerce.com/r-93977e3ef083a471ec62787ea8e74be20af52b9d/javascript/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://cdn3.bigcommerce.com/r-6a4ead4afc1bc3b3666fb257b54ecf8d4254c9e1/themes/__classicmobile/js/jquery.easing.min.js"></script>
+        <script type="text/javascript" src="http://cdn3.bigcommerce.com/r-6a4ead4afc1bc3b3666fb257b54ecf8d4254c9e1/themes/__classicmobile/js/jquery.uniform.min.js"></script>
+	<script type="text/javascript" src="http://cdn3.bigcommerce.com/r-6a4ead4afc1bc3b3666fb257b54ecf8d4254c9e1/themes/__classicmobile/js/script.js"></script>
+	
+	<script type="text/javascript" src="http://cdn3.bigcommerce.com/r-93977e3ef083a471ec62787ea8e74be20af52b9d/javascript/menudrop.js?"></script>
+	<script type="text/javascript" src="http://cdn3.bigcommerce.com/r-6a4ead4afc1bc3b3666fb257b54ecf8d4254c9e1/themes/__classicmobile/js/common.js?"></script>
+	<script type="text/javascript" src="http://cdn3.bigcommerce.com/r-93977e3ef083a471ec62787ea8e74be20af52b9d/javascript/iselector.js?"></script>
+	<script type="text/javascript" src="http://cdn3.bigcommerce.com/r-6a4ead4afc1bc3b3666fb257b54ecf8d4254c9e1/themes/__classicmobile/js/jquery.flexslider.js"></script>
+	<script type="text/javascript" src="http://cdn3.bigcommerce.com/r-6a4ead4afc1bc3b3666fb257b54ecf8d4254c9e1/themes/__classicmobile/js/jquery.autobox.js"></script>
+	<script type="text/javascript" src="http://cdn3.bigcommerce.com/r-6a4ead4afc1bc3b3666fb257b54ecf8d4254c9e1/themes/__classicmobile/js/quicksearch.js"></script>
+    <script src="http://cdn3.bigcommerce.com/r-93977e3ef083a471ec62787ea8e74be20af52b9d/javascript/viewport.js?"></script>
+
+	<!-- HIDE IPHONE MENU BAR WHEN PAGE LOADS -->
+	<script type="application/x-javascript">
+		$(document).ready(function() {
+			$('#SearchForm #search_query').bind('keydown', function() {
+				$('#SearchForm label').hide();
+			})
+			.bind('blur', function() {
+				if(!$(this).val()) {
+					$('#SearchForm label').show();
+				}
+			});
+                 });
+                   addEventListener('load', function() {
+                setTimeout(hideAddressBar, 0);
+		}, false);
+		function hideAddressBar() {
+			//window.scrollTo(0, 1);
+		}
+	</script>
+
+	<script type="text/javascript">
+	//<![CDATA[
+	config.ShopPath = 'http://www.acgrace.com';
+	config.AppPath = ''; // BIG-8939: Deprecated, do not use.
+	if (typeof isc == 'undefined') {
+		isc = {};
+	}
+	isc.TPL_PATH = 'http://cdn3.bigcommerce.com/r-6a4ead4afc1bc3b3666fb257b54ecf8d4254c9e1/themes/__classicmobile';
+	var ThumbImageWidth = 165;
+	var ThumbImageHeight = 165;
+	//]]>
+	</script>
+	
+<script type="text/javascript">
+function beacon_deferred(beacon_api) { beacon_api.set_cookie_domain(".acgrace.com");beacon_api.pageview('', 1359274, "cart", {"customer":{"id":"anonymous"}}, 'e5f4efec70f532c997482189f4f39618550bbadd', '1731b124-21bc-4881-9810-1773c62a3079');}
+</script>
+<script type="text/javascript">
+(function(){var d=document,g=d.createElement('script'),s=d.getElementsByTagName('script')[0];g.type='text/javascript';g.defer=g.async=true;g.src='http://cdn4.bigcommerce.com/r-93977e3ef083a471ec62787ea8e74be20af52b9d/javascript/jirafe/beacon_api.js';s.parentNode.insertBefore(g,s);})();
+</script><script type="text/javascript" src="http://cdn4.bigcommerce.com/r-93977e3ef083a471ec62787ea8e74be20af52b9d/javascript/jquery/plugins/jquery.form.js?4f875"></script>
+<script type="text/javascript" src="http://cdn4.bigcommerce.com/r-93977e3ef083a471ec62787ea8e74be20af52b9d/javascript/jquery/plugins/imodal/imodal.js?4f875"></script>
+<script type="text/javascript">
+    (function(){
+        window.bcanalytics||(window.bcanalytics=[]),window.bcanalytics.methods=["debug","identify","track",
+            "trackLink","trackForm","trackClick","trackSubmit","page","pageview","ab","alias","ready","group",
+            "on","once","off","initialize"],window.bcanalytics.factory=function(a){return function()
+            {var b=Array.prototype.slice.call(arguments);return b.unshift(a),window.bcanalytics.push(b),
+            window.bcanalytics}};for(var i=0;i<window.bcanalytics.methods.length;i++)
+            {var method=window.bcanalytics.methods[i];window.bcanalytics[method]=window.bcanalytics.factory(method)}
+            window.bcanalytics.load=function(){var a=document.createElement("script");a.type="text/javascript",
+            a.async=!0,a.src="http://cdn4.bigcommerce.com/r-93977e3ef083a471ec62787ea8e74be20af52b9d/app/assets/js/vendor/bigcommerce/analytics.min.js";var b=document.getElementsByTagName("script")[0];
+            b.parentNode.insertBefore(a,b)},window.bcanalytics.SNIPPET_VERSION="2.0.8",window.bcanalytics.load();
+        bcanalytics.initialize({"Fornax":{"host":"https:\/\/analytics.bigcommerce.com","cdn":"http:\/\/cdn4.bigcommerce.com\/r-93977e3ef083a471ec62787ea8e74be20af52b9d\/app\/assets\/js\/vendor\/bigcommerce\/fornax.min.js","defaultEventProperties":{"storeId":202768,"experiments":{"PROJECT-174.channel_twitter":"control","PROJECT-331.pos_manager":"on","PROJECT-632.square_export":"on","PROJECT-756.channel_pinterest":"on","PROJECT-756.pinterest_complex_products":"on","PROJECT-756.pinterest_material_options":"control","PROJECT-783.channel_facebook":"on","PROJECT-783.channel_facebook.disconnect":"on","OMNI-1010.channel_amazon.coming_soon":"on","OMNI-913.channel_amazon":"on","OMNI-1010.channel_ebay.coming_soon":"control","OMNI-764.channel_ebay":"on","OMNI-799.facebook_checkout":"on","PROJECT-453.enterprise_apps":"on","CP-78.cp_click_tracking":"control","PROJECT-917.shipping-manager-v2":"on","PROJECT-1082.promote_ppec":"on","BIG-28672.shipstation":"on","PROJECT-871.dashboard_redesign":"control","ng-products":"control"}},"defaultContext":{"source":"Bigcommerce Storefront"},"anonymousId":"1731b124-21bc-4881-9810-1773c62a3079"}});
+    })();
+</script>
+<script type="text/javascript">
+var BCData = {};
+</script>
+
+	
+<script>
+config.isMobile = true;
+</script></head>
+
+<body>
+	<script type="text/javascript" src="http://cdn3.bigcommerce.com/r-93977e3ef083a471ec62787ea8e74be20af52b9d/javascript/cart.js?"></script>
+	<div id="Container">
+			<div class="nav-area">
+					<div class="fixed-menu">
+						<div class="mainNavi" id="mainNavi">
+							<a href="javascript:void(0);" class="showMenu"><i class="icon-reorder"></i></a>
+							<!-- Search -->
+										<div class="Block" id="SearchForm" style="">
+				<div class="BlockContent">
+					<form action="http://www.acgrace.com/search.php" method="get" onsubmit="return check_small_search_form()">
+						<button type="submit"><i class="icon-search"></i></button>
+						<div>
+							<input type="text" name="search_query" id="search_query" class="Textbox autobox" value="" title="Search" autocorrect="off" autocapitalize="off" placeholder="Search" autocomplete="off">
+							
+							<label for="search_query" style="">Search A.C. Grace - Unique E, The Natural Choice</label>
+						</div>
+					</form>
+				</div>
+			</div>
+			<script type="text/javascript">
+				lang.EmptySmallSearch = "You forgot to enter some search keywords.";
+			</script>
+
+							<!-- //Search -->					
+							
+							<a href="http://www.acgrace.com/cart.php" class="Cart"><span class="total">$29.95</span><i class="icon-shopping-cart"></i></a>
+							<div class="clear"></div>
+							<div id="cart-amount">
+							<div class="Block Moveable Panel SideCart" id="SideCartContents" style="">
+	<div class="BlockContent">
+		<p>
+			<span class="item">You have <strong>1</strong> item in your cart.</span>
+			<span class="total">Your sub total is <strong>$29.95</strong>.</span>
+		</p>
+	</div>
+</div>
+							</div>
+						</div>
+						<!-- Top Navigation -->
+						<div class="topNav">
+							<div class="Block CategoryList Moveable Panel" id="SideCategoryList">
+	<h2>Categories</h2>
+	<div class="BlockContent">
+		<ul class="HomeLink">
+		<li><a href="/">Home</a></li>
+		</ul>
+		<ul class="category-list">	<li class=""><a href="http://www.acgrace.com/unique-e-vitamin-e/">UNIQUE E® Vitamin E</a>
+	<ul>	<li class=""><a href="/unique-e-mixed-tocopherols/">UNIQUE E® Mixed Tocopherols</a>
+	
+	</li>	<li class=""><a href="/unique-e-mixed-tocopherols-oil/"> UNIQUE E® Mixed Tocopherols Oil</a>
+	
+	</li>	<li class=""><a href="/unique-e-tocotrienols/">UNIQUE E® Tocotrienols</a>
+	
+	</li>	<li class=""><a href="/unique-e-natural-moisturizing-cream/">UNIQUE E® Natural Moisturizing Cream</a>
+	
+	</li>	<li class=""><a href="/unique-derma/">UNIQUE Derma®</a>
+	
+	</li>	<li class=""><a href="/unique-omega-e/">UNIQUE OMEGA E+®</a>
+	
+	</li>	<li class=""><a href="/unique-omega-krill-oil/">UNIQUE OMEGA® Krill Oil</a>
+	
+	</li>	<li class="LastChild"><a href="/aqua-e-ironup/">Aqua E® &amp; IronUP®</a>
+	
+	</li></ul>
+	</li></ul>
+	</div>
+</div>
+												<div id="TopMenu">
+						<ul>
+							<li><a href="http://www.acgrace.com/account.php">My Account</a></li>
+							<li><a href="http://www.acgrace.com/wishlist.php">WISH LIST</a></li>
+							
+							<li class="ph" style="display: none;"><a href="#" class="phoneIcon"></a></li>
+						</ul>
+						
+					</div> 
+								<div class="Block">
+		<div class="BlockContent">
+			<div id="Menu">
+				<ul>
+						<li class=" ">
+		<a href="/unique-e/"><span>UNIQUE E® Vitamin E</span></a>
+		
+	</li>	<li class="HasSubMenu ">
+		<a href="http://www.acgrace.com/what-is-vitamin-e/"><span>What is Vitamin E?</span></a>
+		<ul>
+	<li><a href="http://www.acgrace.com/why-we-need-vitamin-e/">Why We Need Vitamin E</a></li><li><a href="http://www.acgrace.com/how-is-unique-e-unique/">How is UNIQUE E Unique?</a></li><li><a href="http://www.acgrace.com/natural-vs-synthetic/">Natural vs. Synthetic</a></li><li><a href="http://www.acgrace.com/what-are-tocotrienols/">What are Tocotrienols? </a></li><li><a href="http://www.acgrace.com/what-are-tocopherols/">What are Tocopherols?</a></li>
+</ul>
+	</li>	<li class=" ">
+		<a href="http://www.acgrace.com/news/"><span>News</span></a>
+		
+	</li>	<li class="HasSubMenu ">
+		<a href="http://www.acgrace.com/faqs/"><span>FAQs</span></a>
+		<ul>
+	<li><a href="http://www.acgrace.com/product-related-questions/">Product-Related Questions</a></li><li><a href="http://www.acgrace.com/recommended-dosages/">Recommended Dosages</a></li><li><a href="http://www.acgrace.com/website-help/">Website Help</a></li>
+</ul>
+	</li>	<li class=" ">
+		<a href="/categories?sort=alphadesc"><span>View All Products</span></a>
+		
+	</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+                            <div class="Block Moveable Panel" id="SideCurrencySelector" style="display:none;"></div>
+						</div>
+						<!-- //Top Navigation -->
+					</div>
+				</div>
+		
+		
+		
+		<div id="Outer">
+			<a id="anchorTop"></a>
+			<div id="Header">
+				<div class="ph-no header-table" style="display: none;">		
+					<a href="#" class="phoneIcon"></a>
+				</div>
+				<div id="Logo" class="header-table">
+					<a href="http://www.acgrace.com/"><img src="http://cdn1.bigcommerce.com/server4300/37a99/product_images/logo_banner_serving.jpg" border="0" id="LogoImage" alt="A.C. Grace - Unique E, The Natural Choice"></a>
+
+				</div>
+				
+				<div class="clear"></div>
+			</div>
+			
+		
+		
+				
+
+	<div id="Wrapper">
+		
+		<div class="Content Wide" id="LayoutColumn1">
+			<div class="Block Moveable Panel" id="CartHeader">
+	<h2>
+		<span style=";" class="FloatRight">
+			<a href="http://www.acgrace.com/checkout.php" title="Click here to proceed to checkout" class="Button">
+				Checkout
+			</a>
+			
+		</span>
+		Your Shopping Cart
+	</h2>
+</div>
+
+
+			<div class="Moveable Panel" id="CartStatusMessage">
+		<div class="InfoMessage">
+		<span data-discount-rule-id="0">Spend another $70.05 to qualify for free shipping (US SHIPMENTS ONLY)!</span>
+	</div>
+</div>
+			<script type="text/javascript">
+lang.InvalidQuantity = "Please enter a valid product quantity.";
+lang.Calculating = "Estimating..."
+lang.CalculateShipping = "Estimate Shipping &amp; Tax"
+lang.ChooseShippingMethod = "Please choose a shipping method."
+lang.CartRemoveConfirm = 'Are you sure you want to remove this item from your cart?';
+lang.ConfirmRemoveGiftWrapping = 'Are you sure you want to remove the gift wrapping from this item?';
+lang.SelectCountry = 'Please choose your country.';
+lang.SelectState = 'Please choose a state/province.';
+lang.EnterZip = 'Please type in your zip/postcode.';
+$(document).ready(function() {
+	$('#UpdateQuantitiesLink').click(function() {
+		if(!Cart.ValidateQuantityForm($('#cartForm').get(0))) {
+			return false;
+		}
+		$('#cartForm').submit()
+	});
+});
+</script>
+<script src="http://cdn3.bigcommerce.com/r-93977e3ef083a471ec62787ea8e74be20af52b9d/javascript/jquery/plugins/imodal/imodal.js?" type="text/javascript"></script>
+
+<div class="Block Moveable Panel" id="CartContent">
+	<div class="BlockContent">
+		<div style="display: ">
+			<h3 class="cart-amnt"><span>1 ITEMS</span><em>$29.95</em><div class="clear"></div></h3>
+			<form enctype="multipart/form-data" onsubmit="return Cart.ValidateQuantityForm(this);" action="cart.php" name="cartForm" id="cartForm" method="post">
+			<input type="hidden" name="action" value="update">
+
+			<ul class="CartList">
+				
+	<li>
+		<div class="ProductImage">
+			<a href="http://www.acgrace.com/family-health/unique-omega-krill-oil-60-softgels/"><img src="http://cdn1.bigcommerce.com/server4300/37a99/products/43/images/149/UNIQE-OMEGA-Krill-Oil-60__35351.1326335443.165.165.jpg?c=2"></a>
+		</div>
+		<div class="ProductDetails">
+			<strong><a href="http://www.acgrace.com/family-health/unique-omega-krill-oil-60-softgels/">UNIQUE OMEGA® Krill Oil - 60 Softgels</a></strong>
+			
+			<div style="display: none" class="WrappingOptions">
+				<i class="icon-angle-right"></i> Gift Wrapping:
+				
+				<a href="#" onclick="Cart.ManageGiftWrapping('5867490c76ec0'); return false;" style="">Add</a>
+				<span style="display: none">
+					<a href="#" onclick="Cart.ManageGiftWrapping('5867490c76ec0'); return false;">Change</a> or <a href="cart.php?action=remove_giftwrapping&amp;item_id=5867490c76ec0" onclick="return Cart.RemoveGiftWrapping(); return false;">Remove</a>
+				</span>
+				<br>
+				<span style="display: none">
+					<i class="icon-angle-right"></i> Gift Message:
+					
+				</span>
+			</div>
+			<div class="CartItemPrice">
+				<em class="ProductPrice">$29.95</em>
+			</div>
+			<div class="CartQuantity">
+				Quantity:<br> <div class="qty-select">
+
+<div class="selector" id="uniform-qty_5867490c76ec0" style="width: 74px;"><span style="width: 34px; user-select: none;">1</span><select id="qty_5867490c76ec0" name="qty[5867490c76ec0]" class="Field45 quantityInput" style="">
+    
+	<option selected="selected" value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+	<option value="6">6</option>
+	<option value="7">7</option>
+	<option value="8">8</option>
+	<option value="9">9</option>
+	<option value="10">10</option>
+	<option value="11">11</option>
+	<option value="12">12</option>
+	<option value="13">13</option>
+	<option value="14">14</option>
+	<option value="15">15</option>
+	<option value="16">16</option>
+	<option value="17">17</option>
+	<option value="18">18</option>
+	<option value="19">19</option>
+	<option value="20">20</option>
+	<option value="21">21</option>
+	<option value="22">22</option>
+	<option value="23">23</option>
+	<option value="24">24</option>
+	<option value="25">25</option>
+	<option value="26">26</option>
+	<option value="27">27</option>
+	<option value="28">28</option>
+	<option value="29">29</option>
+	<option value="30">30</option>
+	
+</select></div>
+
+</div> <a href="cart.php?action=remove&amp;item=5867490c76ec0" onclick="Cart.RemoveItem('5867490c76ec0'); return false;" class="CartRemoveLink"><i class="icon-remove"></i> x Remove</a>
+			</div>
+		</div>
+	</li>
+			</ul>
+
+			<div class="CartSummary">
+
+				<div class="SubTotal">
+					<span>Subtotal:</span> <em class="ProductPrice">$29.95</em>
+					<div class="clear"></div>
+				</div>
+
+				<div style="display: none">
+					<span>Gift Wrapping:</span> <em class="ProductPrice"></em>
+					<div class="clear"></div>
+				</div>
+
+				<div style="display:none" class="SubTotal">
+					<span>Shipping ():</span> <em class="ProductPrice"></em>
+					<div class="clear"></div>
+				</div>
+
+				<div style="display: none" class="SubTotal">
+					<span>Handling:</span> <em class="ProductPrice"></em>
+					<div class="clear"></div>
+				</div>
+
+				
+
+				<div class="SubTotal" style="display: none">
+					Discount: <em class="ProductPrice"></em>
+					<div class="clear"></div>
+				</div>
+
+				
+
+				
+
+				<div class="SubTotal GrandTotal">
+					Grand Total: <em class="ProductPrice">$29.95</em>
+					<div class="clear"></div>
+				</div>
+			</div>
+
+			<div class="UpdateQuantity FloatLeft" style="display: ">
+				<a href="#" id="UpdateQuantitiesLink" class="btn-secondary">Update Quantities</a>
+			</div>
+			</form>
+			<div class="ProceedToCheckout">
+				<div class="CheckoutButton" style="">
+					<a href="http://www.acgrace.com/checkout.php" title="Click here to proceed to checkout" class="Button">
+						<i class="icon-shopping-cart"></i> PROCEED TO CHECKOUT
+					</a>
+				</div>
+				
+			</div>
+			<div class="Clear">
+				<div class="Block Moveable Panel" id="SideCouponCodeBox">
+	<h2>Coupon Code</h2>
+	<div class="BlockContent">
+		<script type="text/javascript">
+			lang.EnterCouponCode = "Please enter your coupon code.";
+		</script>
+		<form onsubmit="return Cart.CheckCouponCode()" action="http://www.acgrace.com/cart.php" method="post">
+			<input type="hidden" name="action" value="applycoupon">
+			<div class="CouponCode">
+				<p>If you have a coupon code, enter it in the box below and click 'Go'.</p>
+				<input type="text" name="couponcode" id="couponcode" class="Textbox Field200" placeholder="Enter Coupon Code" title="Enter Coupon Code" autocorrect="off" autocapitalize="off">
+				<input type="submit" value="Go" class="GoButton">
+			</div>
+		</form>
+		<hr>
+	</div>
+</div>
+
+				
+			</div>
+		</div>
+
+		<div style="display: none">
+			<h3 class="cEmpty"><span>0 ITEM</span><em>$0.00</em><div class="clear"></div></h3>
+			<div class="box2">There are no products in your cart.</div>
+			<p><a href="http://www.acgrace.com/" class="Button LightBtn" style="margin-top: 0">Continue Shopping</a></p>
+		</div>
+	</div>
+</div>
+
+			<div class="Block Moveable Panel" id="SuggestiveCartContent" style="display:none;"></div>
+		</div>
+		<div class="Right" id="LayoutColumn2">
+		</div>
+		<div class="clear"></div>
+	</div>
+	        <div id="Footer">
+            <div class="Block Moveable Panel" id="SocialLinks" style="display:none;"></div>
+            <div class="Block FooterLinks">
+                <ul>
+                    <li class="First "><a href="http://www.acgrace.com/"><span>Home</span></a></li>
+                    <li><a href="http://www.acgrace.com/sitemap.php?view=categories">Shop by Category</a></li>
+                    <li><a href="http://www.acgrace.com/brands.php">Shop by Brand</a></li>
+                    	<li class=" ">
+		<a href="/unique-e/"><span>UNIQUE E® Vitamin E</span></a>
+		
+	</li>	<li class="HasSubMenu ">
+		<a href="http://www.acgrace.com/what-is-vitamin-e/"><span>What is Vitamin E?</span></a>
+		<ul>
+	<li><a href="http://www.acgrace.com/why-we-need-vitamin-e/">Why We Need Vitamin E</a></li><li><a href="http://www.acgrace.com/how-is-unique-e-unique/">How is UNIQUE E Unique?</a></li><li><a href="http://www.acgrace.com/natural-vs-synthetic/">Natural vs. Synthetic</a></li><li><a href="http://www.acgrace.com/what-are-tocotrienols/">What are Tocotrienols? </a></li><li><a href="http://www.acgrace.com/what-are-tocopherols/">What are Tocopherols?</a></li>
+</ul>
+	</li>	<li class=" ">
+		<a href="http://www.acgrace.com/news/"><span>News</span></a>
+		
+	</li>	<li class="HasSubMenu ">
+		<a href="http://www.acgrace.com/faqs/"><span>FAQs</span></a>
+		<ul>
+	<li><a href="http://www.acgrace.com/product-related-questions/">Product-Related Questions</a></li><li><a href="http://www.acgrace.com/recommended-dosages/">Recommended Dosages</a></li><li><a href="http://www.acgrace.com/website-help/">Website Help</a></li>
+</ul>
+	</li>	<li class=" ">
+		<a href="/categories?sort=alphadesc"><span>View All Products</span></a>
+		
+	</li>
+                    <li class="flast"><span class="title">Signup for our Newsletter</span>
+                        				<div class="Block NewsletterSubscription Moveable Panel" id="SideNewsletterBox">
+					<h2>
+						Our Newsletter
+					</h2>
+
+					<div class="BlockContent">
+						<form action="http://www.acgrace.com/subscribe.php" method="post" id="subscribe_form" name="subscribe_form">
+							<input type="hidden" name="action" value="subscribe">
+							<label for="nl_first_name">Your First Name:</label><br>
+							<input type="text" class="Textbox autobox" id="nl_first_name" name="nl_first_name" placeholder="Name" autocorrect="off" autocapitalize="off"><br>
+							<label for="nl_email">Your Email Address:</label><br>
+							<input type="email" class="Textbox autobox" id="nl_email" name="nl_email" placeholder="Email" autocorrect="off" autocapitalize="off"><br>
+							<input type="submit" value="Subscribe" class="Button">
+						</form>
+					</div>
+				</div>
+				<script type="text/javascript">
+// <!--
+	$('#subscribe_form').submit(function() {
+		if($('#nl_first_name').val() == '') {
+			alert('You forgot to type in your first name.');
+			$('#nl_first_name').focus();
+			return false;
+		}
+
+		if($('#nl_email').val() == '') {
+			alert('You forgot to type in your email address.');
+			$('#nl_email').focus();
+			return false;
+		}
+
+		if($('#nl_email').val().indexOf('@') == -1 || $('#nl_email').val().indexOf('.') == -1) {
+			alert('Please enter a valid email address, such as john@example.com.');
+			$('#nl_email').focus();
+			$('#nl_email').select();
+			return false;
+		}
+
+		// Set the action of the form to stop spammers
+		$('#subscribe_form').append("<input type=\"hidden\" name=\"check\" value=\"1\" \/>");
+		return true;
+
+	});
+// -->
+</script>
+
+                    </li>
+                    <li class="btop"><a href="#anchorTop">Back to Top</a></li>
+                </ul>
+            </div>
+
+
+            <p class="LoginLogout">
+                <a href="http://www.acgrace.com/login.php" onclick="">Sign in</a> or <a href="http://www.acgrace.com/login.php?action=create_account" onclick="">Create an account</a>
+            </p>
+
+            <p id="FullSiteLink">
+                <a href="" class="currencyJump">All prices are in <span title="Default Currency">USD</span>. </a>
+                <br>
+                <br>
+                <a href="/cart.php?fullSite=1">Switch to Standard View</a><br>
+                (not optimized for mobile browsing)
+            </p>
+
+            <p>
+                Copyright 2016 A.C. Grace - Unique E, The Natural Choice.<br>
+                <a rel="nofollow" href="http://www.bigcommerce.com">Shopping Cart Software</a> by BigCommerce
+            </p>
+            <div class="clear">&nbsp;</div>
+        </div>
+        <div class="clear"></div>
+        </div>
+
+
+        
+        
+        
+        <script type="text/javascript" src="http://cdn4.bigcommerce.com/r-93977e3ef083a471ec62787ea8e74be20af52b9d/javascript/bc_pinstrumentation.min.js"></script>
+
+
+        
+
+</div>
+<script>
+jQuery(document).ready(function(){
+
+            $('.quantityInput').live('change', function() {
+                Cart.UpdateQuantity();
+            });
+        
+});
+</script>
+</body></html>

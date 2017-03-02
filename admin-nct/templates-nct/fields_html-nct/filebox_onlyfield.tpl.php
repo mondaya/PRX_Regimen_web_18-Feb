@@ -1,0 +1,1 @@
+<input type="file" class="%CLASS%" name="%NAME%" id="%ID%" value="%VALUE%" %EXTRA% />

@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>H-Link Africa</title>
+
+    <link type="text/css" rel="stylesheet" href="nct-css/font-awesome.css">
+    <link type="text/css" rel="stylesheet" href="nct-css/nct-bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="nct-css/select/bootstrap-select.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,800,700italic,800italic" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" href="nct-css/nct-style.css">
+    <link type="text/css" rel="stylesheet" href="nct-css/toggle.css">
+    <link type="text/css" rel="stylesheet" href="nct-css/jquery-ui.css">
+</head>
+
+<body>
+    <div class="header">
+        <nav class="panel">
+            <ul>
+                <li>
+                    <div class="openSubPanel"><i class="fa fa-home"></i>Home
+                    </div>
+                </li>
+                <li>
+                    <div class="openSubPanel"><i class="fa fa-play-circle-o"></i> Video Intro</div>
+                </li>
+                <li>
+                    <div class="openSubPanel"><i class="fa fa-download"></i> Download Apps</div>
+                </li>
+                <li>
+                    <div class="openSubPanel"><i class="fa fa-phone"></i> Contact Us
+                    </div>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <div class="openSubPanel"><i class="fa fa-gavel"></i> Product Deals</div>
+                </li>
+                <li>
+                    <div class="openSubPanel"><i class="fa fa-shopping-bag"></i> Product Brands</div>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <div class="openSubPanel"><i class="fa fa-user"></i> My Account
+                    </div>
+                </li>
+                <li>
+                    <div class="openSubPanel"><i class="fa fa-bell"></i> Notification
+                    </div>
+                </li>
+                <li>
+                    <div class="openSubPanel"><i class="fa fa-sign-out"></i> Logout
+                    </div>
+                </li>
+                <li class="closePanel"><i class="fa fa-times"></i> Close
+                </li>
+            </ul>
+
+        </nav>
+
+        <div class="wrapper">
+            <div class="main-content inner-page">
+                <div class="main-head">
+                    <div class="container">
+                        <div class="logo">
+                            <a href="#"><img src="nct-image/HLINKS-LOGO.png" alt="HLINK-LOGO" width="100" height="50"></a>
+                        </div>
+
+                        <div class="menu">
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="nct-image/paypal.png" alt="payment-gateway" width="70" height="35"></a>
+                                    <a href="#"><img src="nct-image/MASTERCARD-LOGO.png" alt="payment-gateway" width="70" height="35"></a>
+                                    <a href="#"><img src="nct-image/VISA-LOGO.png" alt="payment-gateway" width="70" height="35"></a>
+                                </li>
+                                <li>
+                                    <div class="dropdown">
+                                        <button class="btn btn-default dropdown-toggle select-currency" type="button" id="dropdownMenu5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                            Select Currency
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu currency" aria-labelledby="dropdownMenu1">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" href="#" data-toggle="dropdown"><h5>LOGIN</h5></a>
+
+                                    <div class="dropdown-menu login-dropdown">
+                                        <span class="menu-arrow"></span>
+                                        <form method="post" action="login">
+                                            <div class="form-group">
+                                                <input type="email" name="username" id="username" tabindex="1" class="form-control" placeholder="Email Id" value="">
+                                                <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
+                                                <input type="checkbox" tabindex="3" class="" name="remember" id="remember">
+                                                <label for="remember"> Remember Me</label>
+                                                <a href="#" tabindex="5" class="forgot-password">Forgot Password?</a>
+                                                <div class="form-group text-center">
+                                                    <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Log In">
+                                                </div>
+                                            </div>
+                                            <div class="form-group text-center">
+                                                <p class="or-line"><span class="or">OR</span></p>
+                                            </div>
+                                            <div class="social-login-btn">
+                                                <a href="#">
+                                                    <img src="nct-image/fb.jpg">
+                                                </a>
+                                                <a href="#">
+                                                    <img src="nct-image/google+.png">
+                                                </a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </li>
+                                <li><a href="#"><h5>SignUp</h5></a></li>
+                                <li>
+                                    <div class="menuTrigger">
+                                        <a href="#">
+                                            <h5>menu<i class="fa fa-bars"></i></h5></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="common-bg">
+                <div class="heading container category">
+                    <div class="col-lg-4">
+                        <div class="border"></div>
+                    </div>
+                    <div class="col-lg-4">
+                        <h1>Product Deals</h1>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="border"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main">
+                <div class="container">
+                    <div class="heading-btn">
+                        <h2>Select Product</h2>
+                        <button type="button" class="btn btn-default blue-btn right-btn"> <i class="fa fa-shopping-cart" aria-hidden="true"></i> View Cart(3)</button>
+                    </div>
+                    <div class="product-filter">
+                        <div class="form-inline">
+                            <div id="custom-search-input">
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Search by keyword" type="text">
+                                    <button class="btn btn-default" type="button">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <select class="gender">
+                                    <option value="Country">Filter by category</option>
+                                    <option value="">India</option>
+                                    <option value="">Pakistan</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <select class="gender">
+                                    <option value="">Filter by subcategory</option>
+                                    <option value="">Gujrat</option>
+                                    <option value="">Punjab</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="product-category">
+                        <div class=" product-box-main">
+                            <div class="product-box">
+                                <div class="deal-img">
+                                    <div class="product-deal-img">
+                                        <img src="nct-image/1074431_set.jpg" alt="product-img" height="200" width="200">
+                                    </div>
+                                </div>
+                                <div class="pro-name">
+                                    <h3>Michael’s 
+Naturopathic</h3>
+                                    <div class="pro-price">
+                                        <div class="blue">$ 25</div>
+                                        <div class="grey">$ 35</div>
+                                    </div>
+                                    <div class="discount-price">
+                                        <div class="green">( 3% off)</div>
+                                    </div>
+                                </div>
+
+                                <div class="view-more">
+                                    <button type="button" class="btn btn-default blue-btn add-cart-btn">Add to cart</button>
+
+                                    <a href="#">
+                                        <h5>View More</h5></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" product-box-main">
+                            <div class="product-box">
+                                <div class="deal-img">
+                                    <div class="product-deal-img">
+                                        <img src="nct-image/1074431_set.jpg" alt="product-img" height="200" width="200">
+                                    </div>
+                                </div>
+                                <div class="pro-name">
+                                    <h3>Michael’s 
+Naturopathic</h3>
+                                    <div class="pro-price">
+                                        <div class="blue">$ 25</div>
+                                        <div class="grey">$ 35</div>
+                                    </div>
+                                    <div class="discount-price">
+                                        <div class="green">( 3% off)</div>
+                                    </div>
+                                </div>
+
+                                <div class="view-more">
+                                    <button type="button" class="btn btn-default blue-btn add-cart-btn">Add to cart</button>
+
+                                    <a href="#">
+                                        <h5>View More</h5></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" product-box-main">
+                            <div class="product-box">
+                                <div class="deal-img">
+                                    <div class="product-deal-img">
+                                        <img src="nct-image/1074431_set.jpg" alt="product-img" height="200" width="200">
+                                    </div>
+                                </div>
+                                <div class="pro-name">
+                                    <h3>Michael’s 
+Naturopathic</h3>
+                                    <div class="pro-price">
+                                        <div class="blue">$ 25</div>
+                                        <div class="grey">$ 35</div>
+                                    </div>
+                                    <div class="discount-price">
+                                        <div class="green">( 3% off)</div>
+                                    </div>
+                                </div>
+
+                                <div class="view-more">
+                                    <button type="button" class="btn btn-default blue-btn add-cart-btn">Add to cart</button>
+
+                                    <a href="#">
+                                        <h5>View More</h5></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" product-box-main">
+                            <div class="product-box">
+                                <div class="deal-img">
+                                    <div class="product-deal-img">
+                                        <img src="nct-image/1074431_set.jpg" alt="product-img" height="200" width="200">
+                                    </div>
+                                </div>
+                                <div class="pro-name">
+                                    <h3>Michael’s 
+Naturopathic</h3>
+                                    <div class="pro-price">
+                                        <div class="blue">$ 25</div>
+                                        <div class="grey">$ 35</div>
+                                    </div>
+                                    <div class="discount-price">
+                                        <div class="green">( 3% off)</div>
+                                    </div>
+                                </div>
+
+                                <div class="view-more">
+                                    <button type="button" class="btn btn-default blue-btn add-cart-btn">Add to cart</button>
+
+                                    <a href="#">
+                                        <h5>View More</h5></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" product-box-main">
+                            <div class="product-box">
+                                <div class="deal-img">
+                                    <div class="product-deal-img">
+                                        <img src="nct-image/1074431_set.jpg" alt="product-img" height="200" width="200">
+                                    </div>
+                                </div>
+                                <div class="pro-name">
+                                    <h3>Michael’s 
+Naturopathic</h3>
+                                    <div class="pro-price">
+                                        <div class="blue">$ 25</div>
+                                        <div class="grey">$ 35</div>
+                                    </div>
+                                    <div class="discount-price">
+                                        <div class="green">( 3% off)</div>
+                                    </div>
+                                </div>
+
+                                <div class="view-more">
+                                    <button type="button" class="btn btn-default blue-btn add-cart-btn">Add to cart</button>
+
+                                    <a href="#">
+                                        <h5>View More</h5></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" product-box-main">
+                            <div class="product-box">
+                                <div class="deal-img">
+                                    <div class="product-deal-img">
+                                        <img src="nct-image/1074431_set.jpg" alt="product-img" height="200" width="200">
+                                    </div>
+                                </div>
+                                <div class="pro-name">
+                                    <h3>Michael’s 
+Naturopathic</h3>
+                                    <div class="pro-price">
+                                        <div class="blue">$ 25</div>
+                                        <div class="grey">$ 35</div>
+                                    </div>
+                                    <div class="discount-price">
+                                        <div class="green">( 3% off)</div>
+                                    </div>
+                                </div>
+
+                                <div class="view-more">
+                                    <button type="button" class="btn btn-default blue-btn add-cart-btn">Add to cart</button>
+
+                                    <a href="#">
+                                        <h5>View More</h5></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" product-box-main">
+                            <div class="product-box">
+                                <div class="deal-img">
+                                    <div class="product-deal-img">
+                                        <img src="nct-image/1074431_set.jpg" alt="product-img" height="200" width="200">
+                                    </div>
+                                </div>
+                                <div class="pro-name">
+                                    <h3>Michael’s 
+Naturopathic</h3>
+                                    <div class="pro-price">
+                                        <div class="blue">$ 25</div>
+                                        <div class="grey">$ 35</div>
+                                    </div>
+                                    <div class="discount-price">
+                                        <div class="green">( 3% off)</div>
+                                    </div>
+                                </div>
+
+                                <div class="view-more">
+                                    <button type="button" class="btn btn-default blue-btn add-cart-btn">Add to cart</button>
+
+                                    <a href="#">
+                                        <h5>View More</h5></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" product-box-main">
+                            <div class="product-box">
+                                <div class="deal-img">
+                                    <div class="product-deal-img">
+                                        <img src="nct-image/1074431_set.jpg" alt="product-img" height="200" width="200">
+                                    </div>
+                                </div>
+                                <div class="pro-name">
+                                    <h3>Michael’s 
+Naturopathic</h3>
+                                    <div class="pro-price">
+                                        <div class="blue">$ 25</div>
+                                        <div class="grey">$ 35</div>
+                                    </div>
+                                    <div class="discount-price">
+                                        <div class="green">( 3% off)</div>
+                                    </div>
+                                </div>
+
+                                <div class="view-more">
+                                    <button type="button" class="btn btn-default blue-btn add-cart-btn">Add to cart</button>
+
+                                    <a href="#">
+                                        <h5>View More</h5></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--footer start-->
+            <footer>
+                <div class="bottom-main container">
+                    <ul class="bottom-left">
+                        <h3>Social</h3>
+                        <div class="social-icon">
+                            <li>
+                                <a href="#"><img src="nct-image/facebook.png"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="nct-image/twitter.png"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="nct-image/g+.png"></a>
+                            </li>
+                        </div>
+                        <h3>Subscribe to Newsletter</h3>
+                        <div class="email-address">
+                            <div class="email-text">
+                                <input class="form-control search-text" placeholder="Enter Email Address" type="email">
+                                <button class="btn btn-default search-btn" type="button">GO</button>
+                            </div>
+                        </div>
+                    </ul>
+                    <ul class="bottom-left">
+                        <h3>Shopping</h3>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Advertise</a></li>
+                        <li><a href="#">Test</a></li>
+                    </ul>
+                    <ul class="bottom-left">
+                        <h3>Help & Support</h3>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Advertise</a></li>
+                        <li><a href="#">Test</a></li>
+                    </ul>
+                    <ul class="bottom-left">
+                        <h3>Ewallet</h3>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Advertise</a></li>
+                        <li><a href="#">Test</a></li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <div class="container">
+                        <h5>Copyright © 2016 NCrypted. All Rights Reserved </h5>
+                        <a class="nct-logo" href="#"><img src="nct-image/nct-logo.png"></a>
+                    </div>
+                </div>
+            </footer>
+            <!--footer END-->
+        </div>
+    </div>
+
+    <script src="nct-js/nct-jquery.min.js" type="text/javascript"></script>
+    <script src="nct-js/nct-bootstrap.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="nct-js/domtab.js"></script>
+    <script type="text/javascript" src="nct-js/jquery-ui.js"></script>
+    <script>
+        $('.menuTrigger').click(function() {
+            $('.panel').toggleClass('isOpen');
+            $('.wrapper').toggleClass('pushed');
+        });
+
+        $('.openSubPanel').click(function() {
+            $(this).next('.subPanel').addClass('isOpen');
+        });
+
+        $('.closeSubPanel').click(function() {
+            $('.subPanel').removeClass('isOpen');
+        });
+
+        $('.closePanel').click(function() {
+            $('.panel').removeClass('isOpen');
+            $('.wrapper').removeClass('pushed');
+        });
+
+    </script>
+    <script>
+        $(document).ready(function() {
+            //Handles menu drop down
+            $('.dropdown-menu').find('form').click(function(e) {
+                e.stopPropagation();
+            });
+        });
+
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#Carousel').carousel({
+                interval: 5000
+            })
+        });
+
+    </script>
+    <script src="nct-js/script.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".box-height").click(function() {
+                $(".category-list").toggleClass("full-height");
+            });
+        });
+
+    </script>
+    <script>
+        $(function() {
+            $("#datepicker").datepicker();
+        });
+
+    </script>
+</body>
+
+</html>

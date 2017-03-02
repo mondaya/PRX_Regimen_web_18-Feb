@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>jQuery Bar Rating Plugin Demo</title>
+    <meta name="viewport" content="width=device-width">
+    <link href="css/ratting.css" rel="stylesheet" type="text/css"/>
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet"
+          type="text/css"/>
+    <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script src="../jquery.barrating.js"></script>
+    <script type="text/javascript">
+        $(function () {
+			$('#example-f').barrating({ showSelectedRating:false });
+        });
+    </script>
+</head>
+
+<body>
+ <div class="input select rating-f">
+  <form>
+        <select id="example-f" name="rating">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3" >3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+	    <input type="submit" />
+  </form>
+</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>H-Link Africa</title>
+<link type="text/css" rel="stylesheet" href="nct-css/font-awesome.css">
+<link type="text/css" rel="stylesheet" href="nct-css/nct-bootstrap.min.css">
+<link type="text/css" rel="stylesheet" href="nct-css/select/bootstrap-select.min.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,800,700italic,800italic" rel="stylesheet" type="text/css">
+<link type="text/css" rel="stylesheet" href="nct-css/nct-style.css">
+<link type="text/css" rel="stylesheet" href="nct-css/toggle.css">
+<link type="text/css" rel="stylesheet" href="nct-css/jquery-ui.css">
+</head>
+
+<body>
+
+ 
+    <!--Popup start-->
+    <div id="login" class="modal fade in" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" style="display: block;">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="exampleModalLabel">Send A Return Request </h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <input type="text" class="form-control" id="recipient-name" placeholder="Subject">
+            </div>
+            <div class="form-group">
+              <textarea id="comment" placeholder="Description" rows="3" class="form-control description"></textarea>
+            </div>
+            <div class="return-pro">
+            <a class="product-img" href="#"><img src="nct-image/popup-img.jpg" alt="popup-img1"></a>
+            <a class="product-img" href="#"><img src="nct-image/popup-img1.jpg" alt="popup-img1"></a>
+            <a class="product-img" href="#"><img src="nct-image/popup-img.jpg" alt="popup-img1"></a>
+            <a class="product-img" href="#"><img src="nct-image/popup-img1.jpg" alt="popup-img1"></a></div>
+            <button class="btn btn-default blue-bg" type="button">Attach Photo</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-default blue-bg" type="button">Submit</button>
+          <button class="btn btn-default blue-bg" type="button">Cancel</button>
+        </div>
+      </div>
+    </div>
+    </div>
+     <!--End start-->
+<script src="nct-js/nct-jquery.min.js" type="text/javascript"></script> 
+<script src="nct-js/nct-bootstrap.min.js" type="text/javascript"></script> 
+<script type="text/javascript" src="nct-js/domtab.js"></script> 
+<script type="text/javascript" src="nct-js/jquery-ui.js"></script> 
+<script>
+        $('.menuTrigger').click(function() {
+            $('.panel').toggleClass('isOpen');
+            $('.wrapper').toggleClass('pushed');
+        });
+
+        $('.openSubPanel').click(function() {
+            $(this).next('.subPanel').addClass('isOpen');
+        });
+
+        $('.closeSubPanel').click(function() {
+            $('.subPanel').removeClass('isOpen');
+        });
+
+        $('.closePanel').click(function() {
+            $('.panel').removeClass('isOpen');
+            $('.wrapper').removeClass('pushed');
+        });
+
+    </script> 
+<script>
+        $(document).ready(function() {
+            //Handles menu drop down
+            $('.dropdown-menu').find('form').click(function(e) {
+                e.stopPropagation();
+            });
+        });
+
+    </script> 
+<script>
+        $(document).ready(function() {
+            $('#Carousel').carousel({
+                interval: 5000
+            })
+        });
+
+    </script> 
+<script src="nct-js/script.js"></script> 
+<script>
+        $(document).ready(function() {
+            $(".box-height").click(function() {
+                $(".category-list").toggleClass("full-height");
+            });
+        });
+
+    </script> 
+<script>
+        $(function() {
+            $("#datepicker1").datepicker();
+        });
+
+    </script>
+</body>
+</html>

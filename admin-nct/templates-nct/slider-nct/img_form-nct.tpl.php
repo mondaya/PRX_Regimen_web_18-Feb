@@ -1,0 +1,1 @@
+<img src="%SLIDER_PHOTO%" height="100px" style="margin-left:275px">
